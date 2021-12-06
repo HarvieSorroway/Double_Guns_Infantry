@@ -4,7 +4,7 @@
 .\objects\dbus.o: ..\fwlib\inc\stm32f4xx_adc.h
 .\objects\dbus.o: ..\user\main\inc\stm32f4xx.h
 .\objects\dbus.o: ..\core\core_cm4.h
-.\objects\dbus.o: E:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\dbus.o: G:\Keil\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\dbus.o: ..\core\core_cmInstr.h
 .\objects\dbus.o: ..\core\core_cmFunc.h
 .\objects\dbus.o: ..\core\core_cmSimd.h
@@ -37,3 +37,8 @@
 .\objects\dbus.o: ..\fwlib\inc\stm32f4xx_dma2d.h
 .\objects\dbus.o: ..\fwlib\inc\stm32f4xx_fmc.h
 .\objects\dbus.o: ..\fwlib\inc\stm32f4xx_sai.h
+.\objects\dbus.o: G:\Keil\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\dbus.o: ..\user\groundwork\inc\led.h
+.\objects\dbus.o: G:\Keil\ARM\ARMCC\Bin\..\include\math.h
+.\objects\dbus.o: ..\middlewares\delay\delay.h
+.\objects\dbus.o: ..\middlewares\sys\sys.h

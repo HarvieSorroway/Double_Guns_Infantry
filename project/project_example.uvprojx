@@ -677,6 +677,11 @@
               <FileType>1</FileType>
               <FilePath>..\user\main\src\system_stm32f4xx.c</FilePath>
             </File>
+            <File>
+              <FileName>init.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\user\main\src\init.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -699,29 +704,27 @@
         </Group>
         <Group>
           <GroupName>GroundWork</GroupName>
+          <Files>
+            <File>
+              <FileName>led.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\user\groundwork\src\led.c</FilePath>
+            </File>
+            <File>
+              <FileName>dbus.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\user\groundwork\src\dbus.c</FilePath>
+            </File>
+          </Files>
         </Group>
         <Group>
           <GroupName>Moudles</GroupName>
         </Group>
         <Group>
           <GroupName>Algorithm</GroupName>
-          <Files>
-            <File>
-              <FileName>pid.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\user\algorithm\src\pid.c</FilePath>
-            </File>
-          </Files>
         </Group>
         <Group>
           <GroupName>New Group</GroupName>
-          <Files>
-            <File>
-              <FileName>vofa.protocol.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\user\protocol\src\vofa.protocol.c</FilePath>
-            </File>
-          </Files>
         </Group>
       </Groups>
     </Target>

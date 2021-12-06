@@ -2,7 +2,7 @@
 .\objects\stm32f4xx_fmc.o: ..\fwlib\inc\stm32f4xx_fmc.h
 .\objects\stm32f4xx_fmc.o: ..\user\main\inc\stm32f4xx.h
 .\objects\stm32f4xx_fmc.o: ..\core\core_cm4.h
-.\objects\stm32f4xx_fmc.o: E:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\stm32f4xx_fmc.o: G:\Keil\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\stm32f4xx_fmc.o: ..\core\core_cmInstr.h
 .\objects\stm32f4xx_fmc.o: ..\core\core_cmFunc.h
 .\objects\stm32f4xx_fmc.o: ..\core\core_cmSimd.h

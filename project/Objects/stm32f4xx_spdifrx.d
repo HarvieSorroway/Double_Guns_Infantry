@@ -2,7 +2,7 @@
 .\objects\stm32f4xx_spdifrx.o: ..\fwlib\inc\stm32f4xx_spdifrx.h
 .\objects\stm32f4xx_spdifrx.o: ..\user\main\inc\stm32f4xx.h
 .\objects\stm32f4xx_spdifrx.o: ..\core\core_cm4.h
-.\objects\stm32f4xx_spdifrx.o: E:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\stm32f4xx_spdifrx.o: G:\Keil\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\stm32f4xx_spdifrx.o: ..\core\core_cmInstr.h
 .\objects\stm32f4xx_spdifrx.o: ..\core\core_cmFunc.h
 .\objects\stm32f4xx_spdifrx.o: ..\core\core_cmSimd.h

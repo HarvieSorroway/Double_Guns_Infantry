@@ -2,7 +2,7 @@
 .\objects\stm32f4xx_sai.o: ..\fwlib\inc\stm32f4xx_sai.h
 .\objects\stm32f4xx_sai.o: ..\user\main\inc\stm32f4xx.h
 .\objects\stm32f4xx_sai.o: ..\core\core_cm4.h
-.\objects\stm32f4xx_sai.o: E:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\stm32f4xx_sai.o: G:\Keil\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\stm32f4xx_sai.o: ..\core\core_cmInstr.h
 .\objects\stm32f4xx_sai.o: ..\core\core_cmFunc.h
 .\objects\stm32f4xx_sai.o: ..\core\core_cmSimd.h

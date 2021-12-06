@@ -3,7 +3,7 @@
 .\objects\delay.o: ..\middlewares\sys\sys.h
 .\objects\delay.o: ..\user\main\inc\stm32f4xx.h
 .\objects\delay.o: ..\core\core_cm4.h
-.\objects\delay.o: E:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\delay.o: G:\Keil\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\delay.o: ..\core\core_cmInstr.h
 .\objects\delay.o: ..\core\core_cmFunc.h
 .\objects\delay.o: ..\core\core_cmSimd.h
@@ -39,7 +39,7 @@
 .\objects\delay.o: ..\fwlib\inc\stm32f4xx_fmc.h
 .\objects\delay.o: ..\fwlib\inc\stm32f4xx_sai.h
 .\objects\delay.o: ..\freertos\include\FreeRTOS.h
-.\objects\delay.o: E:\keil5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\delay.o: G:\Keil\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\delay.o: ..\freertos\include\FreeRTOSConfig.h
 .\objects\delay.o: ..\freertos\include\projdefs.h
 .\objects\delay.o: ..\freertos\include\portable.h

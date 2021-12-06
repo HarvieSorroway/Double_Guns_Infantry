@@ -1,9 +1,9 @@
 .\objects\tasks.o: ..\freertos\tasks.c
-.\objects\tasks.o: E:\keil5\ARM\ARMCC\Bin\..\include\stdlib.h
-.\objects\tasks.o: E:\keil5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\tasks.o: G:\Keil\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\tasks.o: G:\Keil\ARM\ARMCC\Bin\..\include\string.h
 .\objects\tasks.o: ..\freertos\include\FreeRTOS.h
-.\objects\tasks.o: E:\keil5\ARM\ARMCC\Bin\..\include\stddef.h
-.\objects\tasks.o: E:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\tasks.o: G:\Keil\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\tasks.o: G:\Keil\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\tasks.o: ..\freertos\include\FreeRTOSConfig.h
 .\objects\tasks.o: ..\freertos\include\projdefs.h
 .\objects\tasks.o: ..\freertos\include\portable.h
