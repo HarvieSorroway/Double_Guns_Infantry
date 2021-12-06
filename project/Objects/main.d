@@ -50,3 +50,4 @@
 .\objects\main.o: ..\middlewares\delay\delay.h
 .\objects\main.o: ..\middlewares\sys\sys.h
 .\objects\main.o: ..\user\groundwork\inc\dbus.h
+.\objects\main.o: ..\user\groundwork\inc\usart.h

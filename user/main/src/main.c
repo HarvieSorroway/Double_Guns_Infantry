@@ -5,15 +5,20 @@
 #include "led.h"
 #include "delay.h"
 #include "dbus.h"
+#include "usart.h"
+
+
+send_float datas[2];
 
 int main(void)
 {
-	
 	init_all();
+	
     while(1)
 	{
-		if(RC_CtrlData.rc.s1 == 1)ledX_cmd(3);
-		if(RC_CtrlData.rc.s1 == 3)ledX_cmd(5);
-		if(RC_CtrlData.rc.s1 == 2)ledX_cmd(7);				
+		datas[0].fload_data = RC_CtrlData.rc.ch0;
+		datas[1].fload_data = RC_CtrlData.rc.ch1;
+		USART_sendFloat(datas,2);	
+		delay_ms(5);
 	}
 }

@@ -43,6 +43,8 @@ void ledX_init(void)
 	GPIO_G_InitStruct.GPIO_PuPd=GPIO_PuPd_UP;
 
 	GPIO_Init(GPIOG,&GPIO_G_InitStruct);
+	
+	ledX_Clear();
 }
 
 void ledX_On(uint16_t ledX)

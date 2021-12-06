@@ -1,8 +1,7 @@
 .\objects\init.o: ..\user\main\src\init.c
 .\objects\init.o: ..\user\main\inc\init.h
-.\objects\init.o: ..\user\groundwork\inc\led.h
-.\objects\init.o: ..\user\main\inc\stm32f4xx_conf.h
-.\objects\init.o: ..\fwlib\inc\stm32f4xx_adc.h
+.\objects\init.o: ..\middlewares\delay\delay.h
+.\objects\init.o: ..\middlewares\sys\sys.h
 .\objects\init.o: ..\user\main\inc\stm32f4xx.h
 .\objects\init.o: ..\core\core_cm4.h
 .\objects\init.o: G:\Keil\ARM\ARMCC\Bin\..\include\stdint.h
@@ -11,6 +10,8 @@
 .\objects\init.o: ..\core\core_cmSimd.h
 .\objects\init.o: ..\user\main\inc\system_stm32f4xx.h
 .\objects\init.o: ..\user\main\inc\stm32f4xx_conf.h
+.\objects\init.o: ..\fwlib\inc\stm32f4xx_adc.h
+.\objects\init.o: ..\user\main\inc\stm32f4xx.h
 .\objects\init.o: ..\fwlib\inc\stm32f4xx_crc.h
 .\objects\init.o: ..\fwlib\inc\stm32f4xx_dbgmcu.h
 .\objects\init.o: ..\fwlib\inc\stm32f4xx_dma.h
@@ -38,7 +39,7 @@
 .\objects\init.o: ..\fwlib\inc\stm32f4xx_dma2d.h
 .\objects\init.o: ..\fwlib\inc\stm32f4xx_fmc.h
 .\objects\init.o: ..\fwlib\inc\stm32f4xx_sai.h
+.\objects\init.o: ..\user\groundwork\inc\led.h
 .\objects\init.o: G:\Keil\ARM\ARMCC\Bin\..\include\math.h
-.\objects\init.o: ..\middlewares\delay\delay.h
-.\objects\init.o: ..\middlewares\sys\sys.h
 .\objects\init.o: ..\user\groundwork\inc\dbus.h
+.\objects\init.o: ..\user\groundwork\inc\usart.h
