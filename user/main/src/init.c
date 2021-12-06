@@ -6,7 +6,7 @@
 #include "led.h"
 #include "dbus.h"
 #include "usart.h"
-
+#include "pid.h"
 
 void init_all()
 {
@@ -14,4 +14,5 @@ void init_all()
 	ledX_init();
 	RC_Init();
 	UART8_init();
+	pid_init(&chassis_current_pid[0],0.8,0.3,0.02,3000,2000);
 }

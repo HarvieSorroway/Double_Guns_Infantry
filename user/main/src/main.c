@@ -6,9 +6,12 @@
 #include "delay.h"
 #include "dbus.h"
 #include "usart.h"
+#include "pid.h"
 
 
 send_float datas[2];
+
+float a = 0;
 
 int main(void)
 {
@@ -16,9 +19,6 @@ int main(void)
 	
     while(1)
 	{
-		datas[0].fload_data = RC_CtrlData.rc.ch0;
-		datas[1].fload_data = RC_CtrlData.rc.ch1;
-		USART_sendFloat(datas,2);	
-		delay_ms(5);
+		
 	}
 }

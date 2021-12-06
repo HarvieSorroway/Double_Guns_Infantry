@@ -51,3 +51,5 @@
 .\objects\main.o: ..\middlewares\sys\sys.h
 .\objects\main.o: ..\user\groundwork\inc\dbus.h
 .\objects\main.o: ..\user\groundwork\inc\usart.h
+.\objects\main.o: ..\user\algorithm\inc\pid.h
+.\objects\main.o: ..\user\groundwork\inc\can.h

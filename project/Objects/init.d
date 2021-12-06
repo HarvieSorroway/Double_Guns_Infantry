@@ -43,3 +43,5 @@
 .\objects\init.o: G:\Keil\ARM\ARMCC\Bin\..\include\math.h
 .\objects\init.o: ..\user\groundwork\inc\dbus.h
 .\objects\init.o: ..\user\groundwork\inc\usart.h
+.\objects\init.o: ..\user\algorithm\inc\pid.h
+.\objects\init.o: ..\user\groundwork\inc\can.h

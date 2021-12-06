@@ -4,7 +4,7 @@
 .\objects\can.o: ..\fwlib\inc\stm32f4xx_adc.h
 .\objects\can.o: ..\user\main\inc\stm32f4xx.h
 .\objects\can.o: ..\core\core_cm4.h
-.\objects\can.o: E:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\can.o: G:\Keil\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\can.o: ..\core\core_cmInstr.h
 .\objects\can.o: ..\core\core_cmFunc.h
 .\objects\can.o: ..\core\core_cmSimd.h
