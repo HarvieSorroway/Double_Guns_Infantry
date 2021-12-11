@@ -45,3 +45,4 @@
 .\objects\init.o: ..\user\groundwork\inc\usart.h
 .\objects\init.o: ..\user\algorithm\inc\pid.h
 .\objects\init.o: ..\user\groundwork\inc\can.h
+.\objects\init.o: ..\task\inc\pid_caculate_task.h
