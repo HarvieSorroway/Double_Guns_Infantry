@@ -702,6 +702,11 @@
               <FileType>1</FileType>
               <FilePath>..\task\src\mecanum_task.c</FilePath>
             </File>
+            <File>
+              <FileName>shoot_task.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\task\src\shoot_task.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -761,6 +766,11 @@
               <FileName>bsp_crc8.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\user\groundwork\src\bsp_crc8.c</FilePath>
+            </File>
+            <File>
+              <FileName>pwm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\user\groundwork\src\pwm.c</FilePath>
             </File>
           </Files>
         </Group>

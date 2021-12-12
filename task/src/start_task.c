@@ -17,7 +17,7 @@ TaskHandle_t pid_caculate_Handler;
 
 //	mecanum_task
 #include "mecanum_task.h"
-#define MECANUM_TASK_PRIO 5
+#define MECANUM_TASK_PRIO 4
 #define MECANUM_TASK_STK_SIZE 256
 TaskHandle_t mecanum_task_Handler;
 
@@ -26,12 +26,12 @@ TaskHandle_t mecanum_task_Handler;
 #define TEST_TASK_STK_SIZE 128
 TaskHandle_t test_task_Handler;
 
+//shoot task
+#include "shoot_task.h"
+#define SHOOT_TASK_PRIO 5
+#define SHOOT_TASK_STK_SIZE 128
+TaskHandle_t shoot_task_Handler;
 
-
-
-#define PID_SHOOT_CACULATE_TASK_PRIO 2
-#define PID_SHOOT_CACULATE_TASK_STK_SIZE 256
-TaskHandle_t Pid_Shoot_Caculate_Handler;
 
 void create_start_task(void)
 {
@@ -60,18 +60,26 @@ void start_task(void *pvParameters)
 						(void*         )NULL,
 						(UBaseType_t   )MECANUM_TASK_PRIO,
 						(TaskHandle_t* )&mecanum_task_Handler);
+						
 			xTaskCreate((TaskFunction_t)test_task,
 						(char*         )"test_task",
 						(uint16_t      )TEST_TASK_STK_SIZE,
 						(void*         )NULL,
 						(UBaseType_t   )TEST_TASK_PRIO,
 						(TaskHandle_t* )&test_task_Handler);
+						
+			xTaskCreate((TaskFunction_t)shoot_task,
+						(char*         )"shoot_task",
+						(uint16_t      )SHOOT_TASK_STK_SIZE,
+						(void*         )NULL,
+						(UBaseType_t   )SHOOT_TASK_PRIO,
+						(TaskHandle_t* )&shoot_task_Handler);
 
 	vTaskDelete(Start_Task_Handler);//删除开始任务
 	taskEXIT_CRITICAL();//退出临界区
 }
 
-void test_task(void *pvParameters)
+void test_task(void *pvParameters)//led闪烁任务，用于监控系统是否运行正常
 {
 	for(;;)
 	{

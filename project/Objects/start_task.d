@@ -53,3 +53,4 @@
 .\objects\start_task.o: ..\middlewares\sys\sys.h
 .\objects\start_task.o: ..\task\inc\pid_caculate_task.h
 .\objects\start_task.o: ..\task\inc\mecanum_task.h
+.\objects\start_task.o: ..\task\inc\shoot_task.h
