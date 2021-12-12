@@ -6,7 +6,7 @@
 
 
 
-#define MAX_SPEED 4000
+#define MAX_SPEED 2000
 #define DegreeToRadian  3.1415926535898 / 180.0
 #define y 1
 #define x 0
@@ -19,7 +19,7 @@ float Float_StartSpinAngle = 0;
 float Float_NowAngle = 0;
 float Real_forward_X,Real_forward_Y,Real_Right_X,Real_Right_Y;
 
-float aimSpeed[4] = {0};
+float aimSpeed[4] = {1000,1000,1000,1000};
 volatile float pointRightX;
 volatile float pointRightY;
 volatile float lim_pointRightX;
@@ -101,11 +101,11 @@ void get_aimSpeed(void)
 		}
 		
 	}
-	if(Float_BiggestAimSpeed)
+	if(Float_BiggestAimSpeed != 0)
 	{
 		for(int i = 0;i < 4;i++)
 		{
-			aimSpeed[i] *= (MAX_SPEED / Float_BiggestAimSpeed);
+			aimSpeed[i] = aimSpeed[i] * ((float)MAX_SPEED / (float)Float_BiggestAimSpeed);
 		}
 	}
 }

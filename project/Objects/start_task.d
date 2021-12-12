@@ -47,6 +47,8 @@
 .\objects\start_task.o: ..\freertos\include\mpu_wrappers.h
 .\objects\start_task.o: ..\freertos\include\task.h
 .\objects\start_task.o: ..\freertos\include\list.h
+.\objects\start_task.o: ..\user\groundwork\inc\led.h
+.\objects\start_task.o: G:\Keil\ARM\ARMCC\Bin\..\include\math.h
 .\objects\start_task.o: ..\middlewares\delay\delay.h
 .\objects\start_task.o: ..\middlewares\sys\sys.h
 .\objects\start_task.o: ..\task\inc\pid_caculate_task.h

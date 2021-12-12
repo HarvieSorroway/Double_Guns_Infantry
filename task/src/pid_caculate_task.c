@@ -35,8 +35,9 @@ void pid_caculate_task(void *pvParameters)
 			pid_caculate_position(&chassis_current_pid[i],chassis_speed_pid[i].OUT,moto_chassis_info[i].moto_current);
 		}
 		
-		set_3508_current(chassis_speed_pid[0].OUT,chassis_speed_pid[1].OUT,chassis_speed_pid[2].OUT,chassis_speed_pid[3].OUT);
+		set_3508_current(chassis_current_pid[0].OUT,chassis_current_pid[1].OUT,chassis_current_pid[2].OUT,chassis_current_pid[3].OUT);
 		ledX_Off(3);
 		vTaskDelayUntil(&xLastWakeTime_PidCaculateTask,pdMS_TO_TICKS(5));
+
 	}
 }

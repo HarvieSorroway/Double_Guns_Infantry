@@ -1,4 +1,6 @@
 #include "FreeRTOS.h"
+#include "task.h"
+#include "start_task.h"
 
 #include "init.h"
 
@@ -16,6 +18,9 @@ float a = 0;
 int main(void)
 {
 	init_all();
+	
+	create_start_task();
+	vTaskStartScheduler();
 	
     while(1)
 	{
