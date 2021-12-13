@@ -95,7 +95,7 @@ void USART6_init(void)
 
 void USART_sendFloat(send_float * data,int length)
 {
-	ledX_On(8);
+	//ledX_On(8);
 	uint8_t tail[4] = {0x00,0x00,0x80,0x7f};
 
 	for(int i = 0;i < length;i++)//send data
@@ -110,7 +110,7 @@ void USART_sendFloat(send_float * data,int length)
 	{
 		sendD(tail[i]);
 	}
-	ledX_Off(8);
+	//ledX_Off(8);
 }
 
 void sendD(uint8_t ch)

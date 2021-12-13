@@ -51,6 +51,10 @@
 .\objects\start_task.o: G:\Keil\ARM\ARMCC\Bin\..\include\math.h
 .\objects\start_task.o: ..\middlewares\delay\delay.h
 .\objects\start_task.o: ..\middlewares\sys\sys.h
+.\objects\start_task.o: ..\user\groundwork\inc\usart.h
+.\objects\start_task.o: ..\user\groundwork\inc\can.h
+.\objects\start_task.o: ..\user\groundwork\inc\gimbal.h
 .\objects\start_task.o: ..\task\inc\pid_caculate_task.h
 .\objects\start_task.o: ..\task\inc\mecanum_task.h
 .\objects\start_task.o: ..\task\inc\shoot_task.h
+.\objects\start_task.o: ..\task\inc\gimbal_task.h

@@ -6,6 +6,10 @@
 
 #include "mecanum.h"
 #include "led.h"
+#include "usart.h"
+#include "can.h"
+#include "gimbal.h"
+
 
 void mecanum_task(void *pvParameters)
 {
@@ -15,9 +19,11 @@ void mecanum_task(void *pvParameters)
 	for(;;)
 	{
 		ledX_On(4);
-		get_aimSpeed();
+		//get_aimSpeed();
 		ledX_Off(4);
-		vTaskDelayUntil(&xLastWakeTime_MecanumTask,pdMS_TO_TICKS(5));
-		//vTaskDelay(5);
+		
+		
+		//vTaskDelayUntil(&xLastWakeTime_MecanumTask,pdMS_TO_TICKS(5));
+		vTaskDelay(5);
 	}
 }

@@ -33,8 +33,7 @@ void pid_init(pid_typedef*pid,float kp,float ki,float kd,float pid_out_limit,flo
 	pid->total_err=0.0;
 	
 	pid->Pid_out_limit=pid_out_limit;
-	pid->Pid_integral_limit=pid_integral_limit;
-	
+	pid->Pid_integral_limit=pid_integral_limit;	
 	pid->OUT=0.0;
 }
 

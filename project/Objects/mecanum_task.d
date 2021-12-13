@@ -52,3 +52,6 @@
 .\objects\mecanum_task.o: ..\user\groundwork\inc\led.h
 .\objects\mecanum_task.o: ..\middlewares\delay\delay.h
 .\objects\mecanum_task.o: ..\middlewares\sys\sys.h
+.\objects\mecanum_task.o: ..\user\groundwork\inc\usart.h
+.\objects\mecanum_task.o: ..\user\groundwork\inc\can.h
+.\objects\mecanum_task.o: ..\user\groundwork\inc\gimbal.h

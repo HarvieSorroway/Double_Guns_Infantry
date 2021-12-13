@@ -54,3 +54,5 @@
 .\objects\pid_caculate_task.o: ..\user\groundwork\inc\led.h
 .\objects\pid_caculate_task.o: ..\middlewares\delay\delay.h
 .\objects\pid_caculate_task.o: ..\middlewares\sys\sys.h
+.\objects\pid_caculate_task.o: ..\user\groundwork\inc\gimbal.h
+.\objects\pid_caculate_task.o: ..\user\groundwork\inc\usart.h

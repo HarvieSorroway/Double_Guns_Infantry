@@ -2,7 +2,10 @@
 #include "FreeRTOS.h"
 #include "task.h"
 #include "led.h"
+#include "usart.h"
+#include "can.h"
 #include "delay.h"
+#include "gimbal.h"
 
 #define START_TASK_PRIO 1
 #define START_TASK_STK_SIZE 128
@@ -26,13 +29,25 @@ TaskHandle_t mecanum_task_Handler;
 #define TEST_TASK_STK_SIZE 128
 TaskHandle_t test_task_Handler;
 
+//usart task
+#define USART_TASK_PRIO 7
+#define USART_TASK_STK_SIZE 128
+TaskHandle_t usart_task_Handler;
+
+
 //shoot task
 #include "shoot_task.h"
 #define SHOOT_TASK_PRIO 5
 #define SHOOT_TASK_STK_SIZE 128
 TaskHandle_t shoot_task_Handler;
 
+//gimbal task
+#include "gimbal_task.h"
+#define GIMBAL_TASK_PRIO 6
+#define GIMBAL_TASK_STK_SIZE 128
+TaskHandle_t gimbal_task_Handler;
 
+send_float test_datas[2];
 void create_start_task(void)
 {
 			xTaskCreate((TaskFunction_t)start_task,
@@ -74,6 +89,20 @@ void start_task(void *pvParameters)
 						(void*         )NULL,
 						(UBaseType_t   )SHOOT_TASK_PRIO,
 						(TaskHandle_t* )&shoot_task_Handler);
+						
+			xTaskCreate((TaskFunction_t)gimbal_task,
+						(char*         )"gimbal_task",
+						(uint16_t      )GIMBAL_TASK_STK_SIZE,
+						(void*         )NULL,
+						(UBaseType_t   )GIMBAL_TASK_PRIO,
+						(TaskHandle_t* )&gimbal_task_Handler);
+						
+			xTaskCreate((TaskFunction_t)usart_task,
+						(char*         )"usart_task",
+						(uint16_t      )USART_TASK_STK_SIZE,
+						(void*         )NULL,
+						(UBaseType_t   )USART_TASK_PRIO,
+						(TaskHandle_t* )&usart_task_Handler);
 
 	vTaskDelete(Start_Task_Handler);//删除开始任务
 	taskEXIT_CRITICAL();//退出临界区
@@ -84,8 +113,21 @@ void test_task(void *pvParameters)//led闪烁任务，用于监控系统是否运行正常
 	for(;;)
 	{
 		ledX_On(7);
-		vTaskDelay(500);
+		vTaskDelay(1000);
 		ledX_Off(7);
 		vTaskDelay(500);
+	}
+}
+
+void usart_task(void *pvParameters)
+{
+	
+	for(;;)
+	{
+		test_datas[0].fload_data = moto_m2006_info.moto_total_angle;
+		test_datas[1].fload_data = FloatArray_SetAngle[0];
+		
+		USART_sendFloat(test_datas,2);
+		vTaskDelay(5);
 	}
 }
