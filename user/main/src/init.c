@@ -21,8 +21,7 @@ void init_all()
 	delay_init(180);
 	ledX_init();
 	RC_Init();
-	UART8_init();
-	USART6_init();
+	
 	can1_init();
 	power_init();
 	PWM4_init();
@@ -32,6 +31,7 @@ void init_all()
 //	TIM_SetCompare3(TIM4,1000);
 //	TIM_SetCompare4(TIM4,1000);
 //	delay_ms(3500);
-	
+	UART8_init();
+	USART6_init();
 	pid_caculate_init();
 }

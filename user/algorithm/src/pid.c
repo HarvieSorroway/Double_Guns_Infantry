@@ -2,9 +2,9 @@
 
 pid_typedef chassis_current_pid[4];
 pid_typedef chassis_speed_pid[4];
-pid_typedef m2006_current_pid;   
-pid_typedef m2006_speed_pid;
-pid_typedef m2006_position_pid;
+pid_typedef m2006_current_pid[2];   
+pid_typedef m2006_speed_pid[2];
+pid_typedef m2006_position_pid[2];
 
 void pid_abs_limit(float *a,float abs_max)
 {

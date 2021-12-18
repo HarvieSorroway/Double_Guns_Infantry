@@ -25,6 +25,12 @@ int main(void)
 	
     while(1)
 	{
-		11
+		ledX_On(5);
+		atest_datas[0].fload_data = 0;
+		atest_datas[1].fload_data = 1;
+		USART_sendFloat(atest_datas,2);
+		delay_ms(500);
+		ledX_Off(5);
+		delay_ms(100);
 	}
 }

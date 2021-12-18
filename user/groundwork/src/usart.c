@@ -58,7 +58,7 @@ void USART6_init(void)
 
 	GPIO_InitTypeDef GPIO_InitStruct;
 	USART_InitTypeDef USART6_InitStruct;
-	NVIC_InitTypeDef NVIC_InitStruct;
+	NVIC_InitTypeDef NVIC_InitStruct;  
 
 	GPIO_InitStruct.GPIO_Pin = GPIO_Pin_9;
 	GPIO_InitStruct.GPIO_Mode = GPIO_Mode_AF;
@@ -115,8 +115,9 @@ void USART_sendFloat(send_float * data,int length)
 
 void sendD(uint8_t ch)
 {
-	
+	//ledX_On(7);
 	USART_SendData(UART8,ch);  
 	while(USART_GetFlagStatus(UART8,USART_FLAG_TXE) == RESET);
+	//ledX_Off(7);
 	
 }

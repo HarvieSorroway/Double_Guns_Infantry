@@ -116,6 +116,9 @@ void test_task(void *pvParameters)//led闪烁任务，用于监控系统是否运行正常
 		vTaskDelay(1000);
 		ledX_Off(7);
 		vTaskDelay(500);
+		//test_datas[0].fload_data = FloatArray_SetAngle[0];
+		
+		
 	}
 }
 
@@ -124,10 +127,9 @@ void usart_task(void *pvParameters)
 	
 	for(;;)
 	{
-		test_datas[0].fload_data = moto_m2006_info.moto_total_angle;
+		test_datas[0].fload_data = moto_m2006_info[0].moto_total_angle;
 		test_datas[1].fload_data = FloatArray_SetAngle[0];
-		
 		USART_sendFloat(test_datas,2);
-		vTaskDelay(5);
+		vTaskDelay(2);
 	}
 }

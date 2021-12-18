@@ -1,8 +1,8 @@
 #include "gimbal.h"
 
-float FloatArray_GimbalCoefficients_position[3] = {200,0,0};
-float FloatArray_GimbalCoefficients_speed[3] = {7,0,0};
-float FloatArray_GimbalCoefficients_current[3] = {1.5,0,0};
+float FloatArray_GimbalCoefficients_position[3] = {200,0.5,1};
+float FloatArray_GimbalCoefficients_speed[3] = {15,0.1,0};
+float FloatArray_GimbalCoefficients_current[3] = {1,0,0};
 
 float FloatArray_SetAngle[2] = {0,0};
 

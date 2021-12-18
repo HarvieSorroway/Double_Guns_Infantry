@@ -185,6 +185,11 @@
           <WinNumber>1</WinNumber>
           <ItemText>FloatArray_GimbalCoefficients_current</ItemText>
         </Ww>
+        <Ww>
+          <count>6</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>Using_Delta</ItemText>
+        </Ww>
       </WatchWindow1>
       <Tracepoint>
         <THDelay>0</THDelay>
