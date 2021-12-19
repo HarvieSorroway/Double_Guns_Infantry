@@ -686,6 +686,33 @@
         </Group>
         <Group>
           <GroupName>Task</GroupName>
+          <Files>
+            <File>
+              <FileName>start_task.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\task\src\start_task.c</FilePath>
+            </File>
+            <File>
+              <FileName>pid_caculate_task.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\task\src\pid_caculate_task.c</FilePath>
+            </File>
+            <File>
+              <FileName>mecanum_task.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\task\src\mecanum_task.c</FilePath>
+            </File>
+            <File>
+              <FileName>shoot_task.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\task\src\shoot_task.c</FilePath>
+            </File>
+            <File>
+              <FileName>gimbal_task.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\task\src\gimbal_task.c</FilePath>
+            </File>
+          </Files>
         </Group>
         <Group>
           <GroupName>MiddleWares</GroupName>
@@ -724,6 +751,36 @@
               <FileName>can.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\user\groundwork\src\can.c</FilePath>
+            </File>
+            <File>
+              <FileName>mecanum.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\user\groundwork\src\mecanum.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_protocol.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\user\groundwork\src\bsp_protocol.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_crc16.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\user\groundwork\src\bsp_crc16.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_crc8.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\user\groundwork\src\bsp_crc8.c</FilePath>
+            </File>
+            <File>
+              <FileName>pwm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\user\groundwork\src\pwm.c</FilePath>
+            </File>
+            <File>
+              <FileName>gimbal.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\user\groundwork\src\gimbal.c</FilePath>
             </File>
           </Files>
         </Group>

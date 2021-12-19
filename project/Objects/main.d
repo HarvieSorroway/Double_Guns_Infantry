@@ -8,10 +8,9 @@
 .\objects\main.o: ..\freertos\include\deprecated_definitions.h
 .\objects\main.o: ..\freertos\portable\RVDS\ARM_CM4F\portmacro.h
 .\objects\main.o: ..\freertos\include\mpu_wrappers.h
-.\objects\main.o: ..\user\main\inc\init.h
-.\objects\main.o: ..\user\groundwork\inc\led.h
-.\objects\main.o: ..\user\main\inc\stm32f4xx_conf.h
-.\objects\main.o: ..\fwlib\inc\stm32f4xx_adc.h
+.\objects\main.o: ..\freertos\include\task.h
+.\objects\main.o: ..\freertos\include\list.h
+.\objects\main.o: ..\task\inc\start_task.h
 .\objects\main.o: ..\user\main\inc\stm32f4xx.h
 .\objects\main.o: ..\core\core_cm4.h
 .\objects\main.o: ..\core\core_cmInstr.h
@@ -19,6 +18,8 @@
 .\objects\main.o: ..\core\core_cmSimd.h
 .\objects\main.o: ..\user\main\inc\system_stm32f4xx.h
 .\objects\main.o: ..\user\main\inc\stm32f4xx_conf.h
+.\objects\main.o: ..\fwlib\inc\stm32f4xx_adc.h
+.\objects\main.o: ..\user\main\inc\stm32f4xx.h
 .\objects\main.o: ..\fwlib\inc\stm32f4xx_crc.h
 .\objects\main.o: ..\fwlib\inc\stm32f4xx_dbgmcu.h
 .\objects\main.o: ..\fwlib\inc\stm32f4xx_dma.h
@@ -46,6 +47,8 @@
 .\objects\main.o: ..\fwlib\inc\stm32f4xx_dma2d.h
 .\objects\main.o: ..\fwlib\inc\stm32f4xx_fmc.h
 .\objects\main.o: ..\fwlib\inc\stm32f4xx_sai.h
+.\objects\main.o: ..\user\main\inc\init.h
+.\objects\main.o: ..\user\groundwork\inc\led.h
 .\objects\main.o: G:\Keil\ARM\ARMCC\Bin\..\include\math.h
 .\objects\main.o: ..\middlewares\delay\delay.h
 .\objects\main.o: ..\middlewares\sys\sys.h

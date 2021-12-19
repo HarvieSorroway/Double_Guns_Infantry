@@ -2,7 +2,7 @@
 
 
 moto_info moto_chassis_info[4];
-moto_info moto_m2006_info;
+moto_info moto_m2006_info[2];
 
 CanRxMsg RxMessage;
 
@@ -103,7 +103,7 @@ void set_3508_current(int16_t i1,int16_t i2,int16_t i3,int16_t i4)
 	CAN_Transmit(CAN1, &TxMessage);
 }
 
-void set_2006_current(int16_t i1)
+void set_2006_current(int16_t i1,int16_t i2)
 {
 	CanTxMsg TxMessage;
 	TxMessage.StdId= CAN1_TX_MOTO3508_5_8;
@@ -112,6 +112,8 @@ void set_2006_current(int16_t i1)
 	TxMessage.DLC = 8;
 	TxMessage.Data[0] = i1 >> 8;
 	TxMessage.Data[1] = i1;
+	TxMessage.Data[2] = i2 >> 8;
+	TxMessage.Data[3] = i2;
 	CAN_Transmit(CAN1, &TxMessage);
 }
 
@@ -137,12 +139,12 @@ void moto_infomation_process(moto_info *moto_infomation,CanRxMsg *RxMessage)
 {
 	moto_infomation->moto_raw_last_angle=moto_infomation->moto_raw_angle;
 	moto_infomation->moto_raw_angle=((RxMessage->Data[0]<<8)|RxMessage->Data[1]);
-	moto_infomation->moto_angle=moto_infomation->moto_raw_angle*360/8192;
+	moto_infomation->moto_angle=(float)moto_infomation->moto_raw_angle*(float)360/(float)8192;
 	if(moto_infomation->moto_raw_angle-moto_infomation->moto_raw_last_angle>4096)
 		moto_infomation->round_count--;
 	else if(moto_infomation->moto_raw_angle-moto_infomation->moto_raw_last_angle<-4096)
 		moto_infomation->round_count++;
-	moto_infomation->moto_total_angle=moto_infomation->round_count*360+(moto_infomation->moto_raw_angle-moto_infomation->moto_offset_angle)*360/8192;
+	moto_infomation->moto_total_angle=moto_infomation->round_count*360+(moto_infomation->moto_raw_angle-(float)moto_infomation->moto_offset_angle)*(float)360/(float)8192;
 	
 	moto_infomation->moto_speed=((RxMessage->Data[2]<<8)|RxMessage->Data[3]);
 	moto_infomation->moto_current=((RxMessage->Data[4]<<8)|RxMessage->Data[5]);
@@ -167,9 +169,11 @@ void CAN1_RX0_IRQHandler(void)
 				i=RxMessage.StdId-CAN1_RX_MOTO3508_1;
 				moto_infomation_process(&moto_chassis_info[i],&RxMessage);
 			}break;
-			case CAN1_RX_MOTO2006_5:
+			case CAN1_RX_MOTO2006_5_1:
+			case CAN1_RX_MOTO2006_5_2:
 			{
-				moto_infomation_process(&moto_m2006_info,&RxMessage);
+				i=RxMessage.StdId-CAN1_RX_MOTO2006_5_1;
+				moto_infomation_process(&moto_m2006_info[i],&RxMessage);
 			}break;
 		}	
 	}

@@ -2,7 +2,7 @@
 .\objects\start_task.o: ..\task\inc\start_task.h
 .\objects\start_task.o: ..\user\main\inc\stm32f4xx.h
 .\objects\start_task.o: ..\core\core_cm4.h
-.\objects\start_task.o: E:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\start_task.o: G:\Keil\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\start_task.o: ..\core\core_cmInstr.h
 .\objects\start_task.o: ..\core\core_cmFunc.h
 .\objects\start_task.o: ..\core\core_cmSimd.h
@@ -38,7 +38,7 @@
 .\objects\start_task.o: ..\fwlib\inc\stm32f4xx_fmc.h
 .\objects\start_task.o: ..\fwlib\inc\stm32f4xx_sai.h
 .\objects\start_task.o: ..\freertos\include\FreeRTOS.h
-.\objects\start_task.o: E:\keil5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\start_task.o: G:\Keil\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\start_task.o: ..\freertos\include\FreeRTOSConfig.h
 .\objects\start_task.o: ..\freertos\include\projdefs.h
 .\objects\start_task.o: ..\freertos\include\portable.h
@@ -47,7 +47,14 @@
 .\objects\start_task.o: ..\freertos\include\mpu_wrappers.h
 .\objects\start_task.o: ..\freertos\include\task.h
 .\objects\start_task.o: ..\freertos\include\list.h
+.\objects\start_task.o: ..\user\groundwork\inc\led.h
+.\objects\start_task.o: G:\Keil\ARM\ARMCC\Bin\..\include\math.h
 .\objects\start_task.o: ..\middlewares\delay\delay.h
 .\objects\start_task.o: ..\middlewares\sys\sys.h
-.\objects\start_task.o: ..\task\inc\pid_task.h
-.\objects\start_task.o: ..\user\algorithm\inc\pid.h
+.\objects\start_task.o: ..\user\groundwork\inc\usart.h
+.\objects\start_task.o: ..\user\groundwork\inc\can.h
+.\objects\start_task.o: ..\user\groundwork\inc\gimbal.h
+.\objects\start_task.o: ..\task\inc\pid_caculate_task.h
+.\objects\start_task.o: ..\task\inc\mecanum_task.h
+.\objects\start_task.o: ..\task\inc\shoot_task.h
+.\objects\start_task.o: ..\task\inc\gimbal_task.h
