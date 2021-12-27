@@ -6,13 +6,15 @@
 #include "task.h"
 #include "pid_caculate_task.h"
 
+#include "data_stream.h"
 
 #include "mecanum.h"
 #include "pid.h"
 #include "can.h"
 #include "led.h"
 #include "gimbal.h"
-#include "usart.h"
+//#include "usart.h"
+#include "gimbal_task.h"
 
 
 float FloatArray_SpeedInit[3] = {18,0.5,5};
@@ -28,9 +30,9 @@ void pid_caculate_init(void)
 	}
 	for(int i = 0;i < 2;i++)
 	{
-		pid_init(&m2006_position_pid[i],FloatArray_GimbalCoefficients_position[0],FloatArray_GimbalCoefficients_position[1],FloatArray_GimbalCoefficients_position[2],15000,10000);
-		pid_init(&m2006_speed_pid[i],FloatArray_GimbalCoefficients_speed[0],FloatArray_GimbalCoefficients_speed[1],FloatArray_GimbalCoefficients_speed[2],15000,10000);
-		pid_init(&m2006_current_pid[i],FloatArray_GimbalCoefficients_current[0],FloatArray_GimbalCoefficients_current[1],FloatArray_GimbalCoefficients_current[2],15000,10000);
+		pid_init(&m2006_position_pid[i],FloatArray_GimbalCoefficients_position[0],FloatArray_GimbalCoefficients_position[1],FloatArray_GimbalCoefficients_position[2],15000,8000);
+		pid_init(&m2006_speed_pid[i],FloatArray_GimbalCoefficients_speed[0],FloatArray_GimbalCoefficients_speed[1],FloatArray_GimbalCoefficients_speed[2],15000,8000);
+		pid_init(&m2006_current_pid[i],FloatArray_GimbalCoefficients_current[0],FloatArray_GimbalCoefficients_current[1],FloatArray_GimbalCoefficients_current[2],15000,8000);
 	}
 }
 
@@ -47,8 +49,10 @@ void pid_caculate_task(void *pvParameters)
 		{
 			for(int i=0;i<4;i++)
 			{
-				pid_caculate_position(&chassis_speed_pid[i],(int)aimSpeed[i],moto_chassis_info[i].moto_speed);
-				pid_caculate_position(&chassis_current_pid[i],chassis_speed_pid[i].OUT,moto_chassis_info[i].moto_current);
+//				pid_caculate_position(&chassis_speed_pid[i],(int)aimSpeed[i],moto_chassis_info[i].moto_speed);
+//				pid_caculate_position(&chassis_current_pid[i],chassis_speed_pid[i].OUT,moto_chassis_info[i].moto_current);
+				pid_caculate_position(&chassis_speed_pid[i],(int)aimSpeed[i],Data_m3508[i].moto_speed);
+				pid_caculate_position(&chassis_current_pid[i],chassis_speed_pid[i].OUT,Data_m3508[i].moto_current);
 			}
 		}
 		
@@ -56,9 +60,9 @@ void pid_caculate_task(void *pvParameters)
 		{
 			for(int i=0;i<2;i++)
 			{
-				pid_caculate_position(&m2006_position_pid[i],FloatArray_SetAngle[i],moto_m2006_info[i].moto_total_angle);
-				pid_caculate_position(&m2006_speed_pid[i],m2006_position_pid[i].OUT,moto_m2006_info[i].moto_speed);
-				pid_caculate_position(&m2006_current_pid[i],m2006_speed_pid[i].OUT,moto_m2006_info[i].moto_current);
+				pid_caculate_position(&m2006_position_pid[i],FloatArray_SetAngle[i],Data_bmi.Angle_Z_total/*moto_m2006_info[i].moto_total_angle*/);
+				pid_caculate_position(&m2006_speed_pid[i],m2006_position_pid[i].OUT,Data_bmi.Velocity_Z);
+				pid_caculate_position(&m2006_current_pid[i],m2006_speed_pid[i].OUT,Data_m6020[i].moto_current);
 			}
 		}
 		

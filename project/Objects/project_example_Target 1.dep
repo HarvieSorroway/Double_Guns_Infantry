@@ -1688,7 +1688,7 @@ I (..\fwlib\inc\stm32f4xx_dcmi.h)(0x581CC67C)
 I (..\fwlib\inc\stm32f4xx_dma2d.h)(0x581CC67C)
 I (..\fwlib\inc\stm32f4xx_fmc.h)(0x581CC67C)
 I (..\fwlib\inc\stm32f4xx_sai.h)(0x58220E4E)
-F (..\user\main\src\main.c)(0x61BD8F46)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\core -I ..\freertos\include -I ..\middlewares\delay -I ..\middlewares\sys -I ..\fwlib\inc -I ..\user\groundwork\inc -I ..\user\main\inc -I ..\user\modules\inc -I ..\freertos\portable\RVDS\ARM_CM4F -I ..\task\inc -I ..\user\groundwork\inc -I ..\user\algorithm\inc -I ..\user\modules\inc -I ..\user\protocol\inc -I ..\user\protocol\inc-I.\RTE\_Target_1-IG:\Keil\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IG:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F427xx -DSTM32F427_437xx -D__FPU_PRESENT -DUSE_STDPERIPH_DRIVER -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+F (..\user\main\src\main.c)(0x61C08292)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\core -I ..\freertos\include -I ..\middlewares\delay -I ..\middlewares\sys -I ..\fwlib\inc -I ..\user\groundwork\inc -I ..\user\main\inc -I ..\user\modules\inc -I ..\freertos\portable\RVDS\ARM_CM4F -I ..\task\inc -I ..\user\groundwork\inc -I ..\user\algorithm\inc -I ..\user\modules\inc -I ..\user\protocol\inc -I ..\user\protocol\inc-I.\RTE\_Target_1-IG:\Keil\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IG:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F427xx -DSTM32F427_437xx -D__FPU_PRESENT -DUSE_STDPERIPH_DRIVER -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (..\freertos\include\FreeRTOS.h)(0x5DD0450C)
 I (G:\Keil\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
 I (G:\Keil\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
@@ -1741,10 +1741,10 @@ I (..\user\groundwork\inc\led.h)(0x61ADE7BE)
 I (G:\Keil\ARM\ARMCC\include\math.h)(0x5CEB79D6)
 I (..\middlewares\delay\delay.h)(0x5DEC8AB4)
 I (..\middlewares\sys\sys.h)(0x5DEC8A8C)
-I (..\user\groundwork\inc\dbus.h)(0x61ADE9DA)
+I (..\user\groundwork\inc\dbus.h)(0x61C9AF53)
 I (..\user\groundwork\inc\usart.h)(0x61ADF892)
 I (..\user\algorithm\inc\pid.h)(0x61BD7905)
-I (..\user\groundwork\inc\can.h)(0x61BD9FD4)
+I (..\user\groundwork\inc\can.h)(0x61C9A83C)
 F (..\user\main\src\stm32f4xx_it.c)(0x5F6EA6B0)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\core -I ..\freertos\include -I ..\middlewares\delay -I ..\middlewares\sys -I ..\fwlib\inc -I ..\user\groundwork\inc -I ..\user\main\inc -I ..\user\modules\inc -I ..\freertos\portable\RVDS\ARM_CM4F -I ..\task\inc -I ..\user\groundwork\inc -I ..\user\algorithm\inc -I ..\user\modules\inc -I ..\user\protocol\inc -I ..\user\protocol\inc-I.\RTE\_Target_1-IG:\Keil\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IG:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F427xx -DSTM32F427_437xx -D__FPU_PRESENT -DUSE_STDPERIPH_DRIVER -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o .\objects\stm32f4xx_it.o --omf_browse .\objects\stm32f4xx_it.crf --depend .\objects\stm32f4xx_it.d)
 I (..\user\main\inc\stm32f4xx_it.h)(0x5D74B4A6)
 I (..\user\main\inc\stm32f4xx.h)(0x5DBA840E)
@@ -1820,10 +1820,11 @@ I (..\fwlib\inc\stm32f4xx_dcmi.h)(0x581CC67C)
 I (..\fwlib\inc\stm32f4xx_dma2d.h)(0x581CC67C)
 I (..\fwlib\inc\stm32f4xx_fmc.h)(0x581CC67C)
 I (..\fwlib\inc\stm32f4xx_sai.h)(0x58220E4E)
-F (..\user\main\src\init.c)(0x61BD847B)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\core -I ..\freertos\include -I ..\middlewares\delay -I ..\middlewares\sys -I ..\fwlib\inc -I ..\user\groundwork\inc -I ..\user\main\inc -I ..\user\modules\inc -I ..\freertos\portable\RVDS\ARM_CM4F -I ..\task\inc -I ..\user\groundwork\inc -I ..\user\algorithm\inc -I ..\user\modules\inc -I ..\user\protocol\inc -I ..\user\protocol\inc-I.\RTE\_Target_1-IG:\Keil\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IG:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F427xx -DSTM32F427_437xx -D__FPU_PRESENT -DUSE_STDPERIPH_DRIVER -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o .\objects\init.o --omf_browse .\objects\init.crf --depend .\objects\init.d)
+F (..\user\main\src\init.c)(0x61C9AFFC)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\core -I ..\freertos\include -I ..\middlewares\delay -I ..\middlewares\sys -I ..\fwlib\inc -I ..\user\groundwork\inc -I ..\user\main\inc -I ..\user\modules\inc -I ..\freertos\portable\RVDS\ARM_CM4F -I ..\task\inc -I ..\user\groundwork\inc -I ..\user\algorithm\inc -I ..\user\modules\inc -I ..\user\protocol\inc -I ..\user\protocol\inc-I.\RTE\_Target_1-IG:\Keil\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IG:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F427xx -DSTM32F427_437xx -D__FPU_PRESENT -DUSE_STDPERIPH_DRIVER -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o .\objects\init.o --omf_browse .\objects\init.crf --depend .\objects\init.d)
 I (..\user\main\inc\init.h)(0x61ADE8C5)
-I (..\middlewares\delay\delay.h)(0x5DEC8AB4)
-I (..\middlewares\sys\sys.h)(0x5DEC8A8C)
+I (..\user\groundwork\inc\data_stream.h)(0x61C9B79D)
+I (..\user\main\inc\stm32f4xx_conf.h)(0x58221744)
+I (..\fwlib\inc\stm32f4xx_adc.h)(0x581CC67C)
 I (..\user\main\inc\stm32f4xx.h)(0x5DBA840E)
 I (..\core\core_cm4.h)(0x5D99FA38)
 I (G:\Keil\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
@@ -1831,8 +1832,6 @@ I (..\core\core_cmInstr.h)(0x581CC64E)
 I (..\core\core_cmFunc.h)(0x581CC64E)
 I (..\core\core_cmSimd.h)(0x581CC64E)
 I (..\user\main\inc\system_stm32f4xx.h)(0x582097AC)
-I (..\user\main\inc\stm32f4xx_conf.h)(0x58221744)
-I (..\fwlib\inc\stm32f4xx_adc.h)(0x581CC67C)
 I (..\fwlib\inc\stm32f4xx_crc.h)(0x581CC67C)
 I (..\fwlib\inc\stm32f4xx_dbgmcu.h)(0x581CC67C)
 I (..\fwlib\inc\stm32f4xx_dma.h)(0x581CC67C)
@@ -1860,15 +1859,18 @@ I (..\fwlib\inc\stm32f4xx_dcmi.h)(0x581CC67C)
 I (..\fwlib\inc\stm32f4xx_dma2d.h)(0x581CC67C)
 I (..\fwlib\inc\stm32f4xx_fmc.h)(0x581CC67C)
 I (..\fwlib\inc\stm32f4xx_sai.h)(0x58220E4E)
+I (..\user\groundwork\inc\dbus.h)(0x61C9AF53)
+I (..\user\groundwork\inc\can.h)(0x61C9A83C)
+I (..\user\groundwork\inc\usart.h)(0x61ADF892)
+I (..\middlewares\delay\delay.h)(0x5DEC8AB4)
+I (..\middlewares\sys\sys.h)(0x5DEC8A8C)
 I (..\user\groundwork\inc\led.h)(0x61ADE7BE)
 I (G:\Keil\ARM\ARMCC\include\math.h)(0x5CEB79D6)
-I (..\user\groundwork\inc\dbus.h)(0x61ADE9DA)
-I (..\user\groundwork\inc\usart.h)(0x61ADF892)
 I (..\user\algorithm\inc\pid.h)(0x61BD7905)
-I (..\user\groundwork\inc\can.h)(0x61BD9FD4)
 I (..\user\groundwork\inc\pwm.h)(0x61B5936D)
+I (..\user\groundwork\inc\mecanum.h)(0x61C9AD85)
 I (..\task\inc\pid_caculate_task.h)(0x61B590E8)
-F (..\task\src\start_task.c)(0x61BD937A)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\core -I ..\freertos\include -I ..\middlewares\delay -I ..\middlewares\sys -I ..\fwlib\inc -I ..\user\groundwork\inc -I ..\user\main\inc -I ..\user\modules\inc -I ..\freertos\portable\RVDS\ARM_CM4F -I ..\task\inc -I ..\user\groundwork\inc -I ..\user\algorithm\inc -I ..\user\modules\inc -I ..\user\protocol\inc -I ..\user\protocol\inc-I.\RTE\_Target_1-IG:\Keil\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IG:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F427xx -DSTM32F427_437xx -D__FPU_PRESENT -DUSE_STDPERIPH_DRIVER -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o .\objects\start_task.o --omf_browse .\objects\start_task.crf --depend .\objects\start_task.d)
+F (..\task\src\start_task.c)(0x61C9B089)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\core -I ..\freertos\include -I ..\middlewares\delay -I ..\middlewares\sys -I ..\fwlib\inc -I ..\user\groundwork\inc -I ..\user\main\inc -I ..\user\modules\inc -I ..\freertos\portable\RVDS\ARM_CM4F -I ..\task\inc -I ..\user\groundwork\inc -I ..\user\algorithm\inc -I ..\user\modules\inc -I ..\user\protocol\inc -I ..\user\protocol\inc-I.\RTE\_Target_1-IG:\Keil\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IG:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F427xx -DSTM32F427_437xx -D__FPU_PRESENT -DUSE_STDPERIPH_DRIVER -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o .\objects\start_task.o --omf_browse .\objects\start_task.crf --depend .\objects\start_task.d)
 I (..\task\inc\start_task.h)(0x61B73E41)
 I (..\user\main\inc\stm32f4xx.h)(0x5DBA840E)
 I (..\core\core_cm4.h)(0x5D99FA38)
@@ -1916,18 +1918,21 @@ I (..\freertos\portable\RVDS\ARM_CM4F\portmacro.h)(0x5CD62454)
 I (..\freertos\include\mpu_wrappers.h)(0x5CD62452)
 I (..\freertos\include\task.h)(0x5CD62452)
 I (..\freertos\include\list.h)(0x5CD62452)
+I (..\user\groundwork\inc\data_stream.h)(0x61C9B79D)
+I (..\user\groundwork\inc\dbus.h)(0x61C9AF53)
+I (..\user\groundwork\inc\can.h)(0x61C9A83C)
+I (..\user\groundwork\inc\usart.h)(0x61ADF892)
 I (..\user\groundwork\inc\led.h)(0x61ADE7BE)
 I (G:\Keil\ARM\ARMCC\include\math.h)(0x5CEB79D6)
 I (..\middlewares\delay\delay.h)(0x5DEC8AB4)
 I (..\middlewares\sys\sys.h)(0x5DEC8A8C)
-I (..\user\groundwork\inc\usart.h)(0x61ADF892)
-I (..\user\groundwork\inc\can.h)(0x61BD9FD4)
-I (..\user\groundwork\inc\gimbal.h)(0x61B74063)
+I (..\user\groundwork\inc\gimbal.h)(0x61C06847)
 I (..\task\inc\pid_caculate_task.h)(0x61B590E8)
 I (..\task\inc\mecanum_task.h)(0x61B590E8)
 I (..\task\inc\shoot_task.h)(0x61B5936D)
-I (..\task\inc\gimbal_task.h)(0x61B72D41)
-F (..\task\src\pid_caculate_task.c)(0x61BD91F0)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\core -I ..\freertos\include -I ..\middlewares\delay -I ..\middlewares\sys -I ..\fwlib\inc -I ..\user\groundwork\inc -I ..\user\main\inc -I ..\user\modules\inc -I ..\freertos\portable\RVDS\ARM_CM4F -I ..\task\inc -I ..\user\groundwork\inc -I ..\user\algorithm\inc -I ..\user\modules\inc -I ..\user\protocol\inc -I ..\user\protocol\inc-I.\RTE\_Target_1-IG:\Keil\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IG:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F427xx -DSTM32F427_437xx -D__FPU_PRESENT -DUSE_STDPERIPH_DRIVER -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o .\objects\pid_caculate_task.o --omf_browse .\objects\pid_caculate_task.crf --depend .\objects\pid_caculate_task.d)
+I (..\task\inc\gimbal_task.h)(0x61C58379)
+I (..\task\inc\bmi_task.h)(0x61C0770E)
+F (..\task\src\pid_caculate_task.c)(0x61C8271E)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\core -I ..\freertos\include -I ..\middlewares\delay -I ..\middlewares\sys -I ..\fwlib\inc -I ..\user\groundwork\inc -I ..\user\main\inc -I ..\user\modules\inc -I ..\freertos\portable\RVDS\ARM_CM4F -I ..\task\inc -I ..\user\groundwork\inc -I ..\user\algorithm\inc -I ..\user\modules\inc -I ..\user\protocol\inc -I ..\user\protocol\inc-I.\RTE\_Target_1-IG:\Keil\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IG:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F427xx -DSTM32F427_437xx -D__FPU_PRESENT -DUSE_STDPERIPH_DRIVER -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o .\objects\pid_caculate_task.o --omf_browse .\objects\pid_caculate_task.crf --depend .\objects\pid_caculate_task.d)
 I (..\freertos\include\FreeRTOS.h)(0x5DD0450C)
 I (G:\Keil\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
 I (G:\Keil\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
@@ -1975,15 +1980,18 @@ I (..\fwlib\inc\stm32f4xx_dcmi.h)(0x581CC67C)
 I (..\fwlib\inc\stm32f4xx_dma2d.h)(0x581CC67C)
 I (..\fwlib\inc\stm32f4xx_fmc.h)(0x581CC67C)
 I (..\fwlib\inc\stm32f4xx_sai.h)(0x58220E4E)
-I (..\user\groundwork\inc\mecanum.h)(0x61B590E8)
+I (..\user\groundwork\inc\data_stream.h)(0x61C9B79D)
+I (..\user\groundwork\inc\dbus.h)(0x61C9AF53)
+I (..\user\groundwork\inc\can.h)(0x61C9A83C)
+I (..\user\groundwork\inc\usart.h)(0x61ADF892)
+I (..\user\groundwork\inc\mecanum.h)(0x61C9AD85)
 I (G:\Keil\ARM\ARMCC\include\math.h)(0x5CEB79D6)
 I (..\user\algorithm\inc\pid.h)(0x61BD7905)
-I (..\user\groundwork\inc\can.h)(0x61BD9FD4)
 I (..\user\groundwork\inc\led.h)(0x61ADE7BE)
 I (..\middlewares\delay\delay.h)(0x5DEC8AB4)
 I (..\middlewares\sys\sys.h)(0x5DEC8A8C)
-I (..\user\groundwork\inc\gimbal.h)(0x61B74063)
-I (..\user\groundwork\inc\usart.h)(0x61ADF892)
+I (..\user\groundwork\inc\gimbal.h)(0x61C06847)
+I (..\task\inc\gimbal_task.h)(0x61C58379)
 F (..\task\src\mecanum_task.c)(0x61B739EF)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\core -I ..\freertos\include -I ..\middlewares\delay -I ..\middlewares\sys -I ..\fwlib\inc -I ..\user\groundwork\inc -I ..\user\main\inc -I ..\user\modules\inc -I ..\freertos\portable\RVDS\ARM_CM4F -I ..\task\inc -I ..\user\groundwork\inc -I ..\user\algorithm\inc -I ..\user\modules\inc -I ..\user\protocol\inc -I ..\user\protocol\inc-I.\RTE\_Target_1-IG:\Keil\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IG:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F427xx -DSTM32F427_437xx -D__FPU_PRESENT -DUSE_STDPERIPH_DRIVER -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o .\objects\mecanum_task.o --omf_browse .\objects\mecanum_task.crf --depend .\objects\mecanum_task.d)
 I (..\task\inc\mecanum_task.h)(0x61B590E8)
 I (..\user\main\inc\stm32f4xx_conf.h)(0x58221744)
@@ -2032,14 +2040,14 @@ I (..\freertos\portable\RVDS\ARM_CM4F\portmacro.h)(0x5CD62454)
 I (..\freertos\include\mpu_wrappers.h)(0x5CD62452)
 I (..\freertos\include\task.h)(0x5CD62452)
 I (..\freertos\include\list.h)(0x5CD62452)
-I (..\user\groundwork\inc\mecanum.h)(0x61B590E8)
+I (..\user\groundwork\inc\mecanum.h)(0x61C9AD85)
 I (G:\Keil\ARM\ARMCC\include\math.h)(0x5CEB79D6)
 I (..\user\groundwork\inc\led.h)(0x61ADE7BE)
 I (..\middlewares\delay\delay.h)(0x5DEC8AB4)
 I (..\middlewares\sys\sys.h)(0x5DEC8A8C)
 I (..\user\groundwork\inc\usart.h)(0x61ADF892)
-I (..\user\groundwork\inc\can.h)(0x61BD9FD4)
-I (..\user\groundwork\inc\gimbal.h)(0x61B74063)
+I (..\user\groundwork\inc\can.h)(0x61C9A83C)
+I (..\user\groundwork\inc\gimbal.h)(0x61C06847)
 F (..\task\src\shoot_task.c)(0x61B59733)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\core -I ..\freertos\include -I ..\middlewares\delay -I ..\middlewares\sys -I ..\fwlib\inc -I ..\user\groundwork\inc -I ..\user\main\inc -I ..\user\modules\inc -I ..\freertos\portable\RVDS\ARM_CM4F -I ..\task\inc -I ..\user\groundwork\inc -I ..\user\algorithm\inc -I ..\user\modules\inc -I ..\user\protocol\inc -I ..\user\protocol\inc-I.\RTE\_Target_1-IG:\Keil\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IG:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F427xx -DSTM32F427_437xx -D__FPU_PRESENT -DUSE_STDPERIPH_DRIVER -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o .\objects\shoot_task.o --omf_browse .\objects\shoot_task.crf --depend .\objects\shoot_task.d)
 I (..\freertos\include\FreeRTOS.h)(0x5DD0450C)
 I (G:\Keil\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
@@ -2052,7 +2060,7 @@ I (..\freertos\portable\RVDS\ARM_CM4F\portmacro.h)(0x5CD62454)
 I (..\freertos\include\mpu_wrappers.h)(0x5CD62452)
 I (..\freertos\include\task.h)(0x5CD62452)
 I (..\freertos\include\list.h)(0x5CD62452)
-I (..\user\groundwork\inc\dbus.h)(0x61ADE9DA)
+I (..\user\groundwork\inc\dbus.h)(0x61C9AF53)
 I (..\user\main\inc\stm32f4xx_conf.h)(0x58221744)
 I (..\fwlib\inc\stm32f4xx_adc.h)(0x581CC67C)
 I (..\user\main\inc\stm32f4xx.h)(0x5DBA840E)
@@ -2089,8 +2097,8 @@ I (..\fwlib\inc\stm32f4xx_dma2d.h)(0x581CC67C)
 I (..\fwlib\inc\stm32f4xx_fmc.h)(0x581CC67C)
 I (..\fwlib\inc\stm32f4xx_sai.h)(0x58220E4E)
 I (..\task\inc\shoot_task.h)(0x61B5936D)
-F (..\task\src\gimbal_task.c)(0x61BDA466)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\core -I ..\freertos\include -I ..\middlewares\delay -I ..\middlewares\sys -I ..\fwlib\inc -I ..\user\groundwork\inc -I ..\user\main\inc -I ..\user\modules\inc -I ..\freertos\portable\RVDS\ARM_CM4F -I ..\task\inc -I ..\user\groundwork\inc -I ..\user\algorithm\inc -I ..\user\modules\inc -I ..\user\protocol\inc -I ..\user\protocol\inc-I.\RTE\_Target_1-IG:\Keil\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IG:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F427xx -DSTM32F427_437xx -D__FPU_PRESENT -DUSE_STDPERIPH_DRIVER -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o .\objects\gimbal_task.o --omf_browse .\objects\gimbal_task.crf --depend .\objects\gimbal_task.d)
-I (..\task\inc\gimbal_task.h)(0x61B72D41)
+F (..\task\src\gimbal_task.c)(0x61C5A2E4)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\core -I ..\freertos\include -I ..\middlewares\delay -I ..\middlewares\sys -I ..\fwlib\inc -I ..\user\groundwork\inc -I ..\user\main\inc -I ..\user\modules\inc -I ..\freertos\portable\RVDS\ARM_CM4F -I ..\task\inc -I ..\user\groundwork\inc -I ..\user\algorithm\inc -I ..\user\modules\inc -I ..\user\protocol\inc -I ..\user\protocol\inc-I.\RTE\_Target_1-IG:\Keil\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IG:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F427xx -DSTM32F427_437xx -D__FPU_PRESENT -DUSE_STDPERIPH_DRIVER -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o .\objects\gimbal_task.o --omf_browse .\objects\gimbal_task.crf --depend .\objects\gimbal_task.d)
+I (..\task\inc\gimbal_task.h)(0x61C58379)
 I (..\user\main\inc\stm32f4xx_conf.h)(0x58221744)
 I (..\fwlib\inc\stm32f4xx_adc.h)(0x581CC67C)
 I (..\user\main\inc\stm32f4xx.h)(0x5DBA840E)
@@ -2137,15 +2145,72 @@ I (..\freertos\portable\RVDS\ARM_CM4F\portmacro.h)(0x5CD62454)
 I (..\freertos\include\mpu_wrappers.h)(0x5CD62452)
 I (..\freertos\include\task.h)(0x5CD62452)
 I (..\freertos\include\list.h)(0x5CD62452)
-I (..\user\groundwork\inc\gimbal.h)(0x61B74063)
+I (..\user\groundwork\inc\gimbal.h)(0x61C06847)
 I (..\user\groundwork\inc\led.h)(0x61ADE7BE)
 I (G:\Keil\ARM\ARMCC\include\math.h)(0x5CEB79D6)
 I (..\middlewares\delay\delay.h)(0x5DEC8AB4)
 I (..\middlewares\sys\sys.h)(0x5DEC8A8C)
 I (..\user\algorithm\inc\pid.h)(0x61BD7905)
-I (..\user\groundwork\inc\can.h)(0x61BD9FD4)
+I (..\user\groundwork\inc\can.h)(0x61C9A83C)
 I (..\user\groundwork\inc\usart.h)(0x61ADF892)
-I (..\user\groundwork\inc\dbus.h)(0x61ADE9DA)
+I (..\user\groundwork\inc\dbus.h)(0x61C9AF53)
+F (..\task\src\bmi_task.c)(0x61C825E0)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\core -I ..\freertos\include -I ..\middlewares\delay -I ..\middlewares\sys -I ..\fwlib\inc -I ..\user\groundwork\inc -I ..\user\main\inc -I ..\user\modules\inc -I ..\freertos\portable\RVDS\ARM_CM4F -I ..\task\inc -I ..\user\groundwork\inc -I ..\user\algorithm\inc -I ..\user\modules\inc -I ..\user\protocol\inc -I ..\user\protocol\inc-I.\RTE\_Target_1-IG:\Keil\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IG:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F427xx -DSTM32F427_437xx -D__FPU_PRESENT -DUSE_STDPERIPH_DRIVER -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o .\objects\bmi_task.o --omf_browse .\objects\bmi_task.crf --depend .\objects\bmi_task.d)
+I (..\task\inc\pid_caculate_task.h)(0x61B590E8)
+I (..\user\main\inc\stm32f4xx_conf.h)(0x58221744)
+I (..\fwlib\inc\stm32f4xx_adc.h)(0x581CC67C)
+I (..\user\main\inc\stm32f4xx.h)(0x5DBA840E)
+I (..\core\core_cm4.h)(0x5D99FA38)
+I (G:\Keil\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (..\core\core_cmInstr.h)(0x581CC64E)
+I (..\core\core_cmFunc.h)(0x581CC64E)
+I (..\core\core_cmSimd.h)(0x581CC64E)
+I (..\user\main\inc\system_stm32f4xx.h)(0x582097AC)
+I (..\fwlib\inc\stm32f4xx_crc.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_dbgmcu.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_dma.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_exti.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_flash.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_gpio.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_i2c.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_iwdg.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_pwr.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_rcc.h)(0x58234D94)
+I (..\fwlib\inc\stm32f4xx_rtc.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_sdio.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_spi.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_syscfg.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_tim.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_usart.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_wwdg.h)(0x581CC67C)
+I (..\fwlib\inc\misc.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_cryp.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_hash.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_rng.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_can.h)(0x5821F052)
+I (..\fwlib\inc\stm32f4xx_dac.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_dcmi.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_dma2d.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_fmc.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_sai.h)(0x58220E4E)
+I (..\user\groundwork\inc\bsp_protocol.h)(0x61B590E8)
+I (..\user\main\inc\main.h)(0x5DD0F7B6)
+I (..\task\inc\gimbal_task.h)(0x61C58379)
+I (..\freertos\include\FreeRTOS.h)(0x5DD0450C)
+I (G:\Keil\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
+I (..\freertos\include\FreeRTOSConfig.h)(0x5D3D065A)
+I (..\freertos\include\projdefs.h)(0x5CD62452)
+I (..\freertos\include\portable.h)(0x5CD62452)
+I (..\freertos\include\deprecated_definitions.h)(0x5CD62452)
+I (..\freertos\portable\RVDS\ARM_CM4F\portmacro.h)(0x5CD62454)
+I (..\freertos\include\mpu_wrappers.h)(0x5CD62452)
+I (..\freertos\include\task.h)(0x5CD62452)
+I (..\freertos\include\list.h)(0x5CD62452)
+I (..\user\groundwork\inc\gimbal.h)(0x61C06847)
+I (..\user\algorithm\inc\pid.h)(0x61BD7905)
+I (..\user\groundwork\inc\can.h)(0x61C9A83C)
+I (..\user\groundwork\inc\data_stream.h)(0x61C9B79D)
+I (..\user\groundwork\inc\dbus.h)(0x61C9AF53)
+I (..\user\groundwork\inc\usart.h)(0x61ADF892)
 F (..\middlewares\delay\delay.c)(0x5DEC8AB4)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\core -I ..\freertos\include -I ..\middlewares\delay -I ..\middlewares\sys -I ..\fwlib\inc -I ..\user\groundwork\inc -I ..\user\main\inc -I ..\user\modules\inc -I ..\freertos\portable\RVDS\ARM_CM4F -I ..\task\inc -I ..\user\groundwork\inc -I ..\user\algorithm\inc -I ..\user\modules\inc -I ..\user\protocol\inc -I ..\user\protocol\inc-I.\RTE\_Target_1-IG:\Keil\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IG:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F427xx -DSTM32F427_437xx -D__FPU_PRESENT -DUSE_STDPERIPH_DRIVER -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o .\objects\delay.o --omf_browse .\objects\delay.crf --depend .\objects\delay.d)
 I (..\middlewares\delay\delay.h)(0x5DEC8AB4)
 I (..\middlewares\sys\sys.h)(0x5DEC8A8C)
@@ -2274,8 +2339,8 @@ I (..\fwlib\inc\stm32f4xx_sai.h)(0x58220E4E)
 I (G:\Keil\ARM\ARMCC\include\math.h)(0x5CEB79D6)
 I (..\middlewares\delay\delay.h)(0x5DEC8AB4)
 I (..\middlewares\sys\sys.h)(0x5DEC8A8C)
-F (..\user\groundwork\src\dbus.c)(0x61ADEAB9)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\core -I ..\freertos\include -I ..\middlewares\delay -I ..\middlewares\sys -I ..\fwlib\inc -I ..\user\groundwork\inc -I ..\user\main\inc -I ..\user\modules\inc -I ..\freertos\portable\RVDS\ARM_CM4F -I ..\task\inc -I ..\user\groundwork\inc -I ..\user\algorithm\inc -I ..\user\modules\inc -I ..\user\protocol\inc -I ..\user\protocol\inc-I.\RTE\_Target_1-IG:\Keil\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IG:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F427xx -DSTM32F427_437xx -D__FPU_PRESENT -DUSE_STDPERIPH_DRIVER -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o .\objects\dbus.o --omf_browse .\objects\dbus.crf --depend .\objects\dbus.d)
-I (..\user\groundwork\inc\dbus.h)(0x61ADE9DA)
+F (..\user\groundwork\src\dbus.c)(0x61C9AF53)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\core -I ..\freertos\include -I ..\middlewares\delay -I ..\middlewares\sys -I ..\fwlib\inc -I ..\user\groundwork\inc -I ..\user\main\inc -I ..\user\modules\inc -I ..\freertos\portable\RVDS\ARM_CM4F -I ..\task\inc -I ..\user\groundwork\inc -I ..\user\algorithm\inc -I ..\user\modules\inc -I ..\user\protocol\inc -I ..\user\protocol\inc-I.\RTE\_Target_1-IG:\Keil\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IG:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F427xx -DSTM32F427_437xx -D__FPU_PRESENT -DUSE_STDPERIPH_DRIVER -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o .\objects\dbus.o --omf_browse .\objects\dbus.crf --depend .\objects\dbus.d)
+I (..\user\groundwork\inc\dbus.h)(0x61C9AF53)
 I (..\user\main\inc\stm32f4xx_conf.h)(0x58221744)
 I (..\fwlib\inc\stm32f4xx_adc.h)(0x581CC67C)
 I (..\user\main\inc\stm32f4xx.h)(0x5DBA840E)
@@ -2317,6 +2382,9 @@ I (..\user\groundwork\inc\led.h)(0x61ADE7BE)
 I (G:\Keil\ARM\ARMCC\include\math.h)(0x5CEB79D6)
 I (..\middlewares\delay\delay.h)(0x5DEC8AB4)
 I (..\middlewares\sys\sys.h)(0x5DEC8A8C)
+I (..\user\groundwork\inc\data_stream.h)(0x61C9B79D)
+I (..\user\groundwork\inc\can.h)(0x61C9A83C)
+I (..\user\groundwork\inc\usart.h)(0x61ADF892)
 F (..\user\groundwork\src\usart.c)(0x61BD9BF2)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\core -I ..\freertos\include -I ..\middlewares\delay -I ..\middlewares\sys -I ..\fwlib\inc -I ..\user\groundwork\inc -I ..\user\main\inc -I ..\user\modules\inc -I ..\freertos\portable\RVDS\ARM_CM4F -I ..\task\inc -I ..\user\groundwork\inc -I ..\user\algorithm\inc -I ..\user\modules\inc -I ..\user\protocol\inc -I ..\user\protocol\inc-I.\RTE\_Target_1-IG:\Keil\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IG:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F427xx -DSTM32F427_437xx -D__FPU_PRESENT -DUSE_STDPERIPH_DRIVER -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o .\objects\usart.o --omf_browse .\objects\usart.crf --depend .\objects\usart.d)
 I (..\user\groundwork\inc\usart.h)(0x61ADF892)
 I (..\user\main\inc\stm32f4xx_conf.h)(0x58221744)
@@ -2359,8 +2427,8 @@ I (..\user\groundwork\inc\led.h)(0x61ADE7BE)
 I (G:\Keil\ARM\ARMCC\include\math.h)(0x5CEB79D6)
 I (..\middlewares\delay\delay.h)(0x5DEC8AB4)
 I (..\middlewares\sys\sys.h)(0x5DEC8A8C)
-F (..\user\groundwork\src\can.c)(0x61BD9FF3)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\core -I ..\freertos\include -I ..\middlewares\delay -I ..\middlewares\sys -I ..\fwlib\inc -I ..\user\groundwork\inc -I ..\user\main\inc -I ..\user\modules\inc -I ..\freertos\portable\RVDS\ARM_CM4F -I ..\task\inc -I ..\user\groundwork\inc -I ..\user\algorithm\inc -I ..\user\modules\inc -I ..\user\protocol\inc -I ..\user\protocol\inc-I.\RTE\_Target_1-IG:\Keil\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IG:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F427xx -DSTM32F427_437xx -D__FPU_PRESENT -DUSE_STDPERIPH_DRIVER -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o .\objects\can.o --omf_browse .\objects\can.crf --depend .\objects\can.d)
-I (..\user\groundwork\inc\can.h)(0x61BD9FD4)
+F (..\user\groundwork\src\can.c)(0x61C9AB4A)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\core -I ..\freertos\include -I ..\middlewares\delay -I ..\middlewares\sys -I ..\fwlib\inc -I ..\user\groundwork\inc -I ..\user\main\inc -I ..\user\modules\inc -I ..\freertos\portable\RVDS\ARM_CM4F -I ..\task\inc -I ..\user\groundwork\inc -I ..\user\algorithm\inc -I ..\user\modules\inc -I ..\user\protocol\inc -I ..\user\protocol\inc-I.\RTE\_Target_1-IG:\Keil\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IG:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F427xx -DSTM32F427_437xx -D__FPU_PRESENT -DUSE_STDPERIPH_DRIVER -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o .\objects\can.o --omf_browse .\objects\can.crf --depend .\objects\can.d)
+I (..\user\groundwork\inc\can.h)(0x61C9A83C)
 I (..\user\main\inc\stm32f4xx_conf.h)(0x58221744)
 I (..\fwlib\inc\stm32f4xx_adc.h)(0x581CC67C)
 I (..\user\main\inc\stm32f4xx.h)(0x5DBA840E)
@@ -2397,47 +2465,52 @@ I (..\fwlib\inc\stm32f4xx_dcmi.h)(0x581CC67C)
 I (..\fwlib\inc\stm32f4xx_dma2d.h)(0x581CC67C)
 I (..\fwlib\inc\stm32f4xx_fmc.h)(0x581CC67C)
 I (..\fwlib\inc\stm32f4xx_sai.h)(0x58220E4E)
-F (..\user\groundwork\src\mecanum.c)(0x61B590E8)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\core -I ..\freertos\include -I ..\middlewares\delay -I ..\middlewares\sys -I ..\fwlib\inc -I ..\user\groundwork\inc -I ..\user\main\inc -I ..\user\modules\inc -I ..\freertos\portable\RVDS\ARM_CM4F -I ..\task\inc -I ..\user\groundwork\inc -I ..\user\algorithm\inc -I ..\user\modules\inc -I ..\user\protocol\inc -I ..\user\protocol\inc-I.\RTE\_Target_1-IG:\Keil\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IG:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F427xx -DSTM32F427_437xx -D__FPU_PRESENT -DUSE_STDPERIPH_DRIVER -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o .\objects\mecanum.o --omf_browse .\objects\mecanum.crf --depend .\objects\mecanum.d)
-I (G:\Keil\ARM\ARMCC\include\math.h)(0x5CEB79D6)
-I (..\user\groundwork\inc\mecanum.h)(0x61B590E8)
-I (..\user\main\inc\stm32f4xx_conf.h)(0x58221744)
-I (..\fwlib\inc\stm32f4xx_adc.h)(0x581CC67C)
-I (..\user\main\inc\stm32f4xx.h)(0x5DBA840E)
-I (..\core\core_cm4.h)(0x5D99FA38)
-I (G:\Keil\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
-I (..\core\core_cmInstr.h)(0x581CC64E)
-I (..\core\core_cmFunc.h)(0x581CC64E)
-I (..\core\core_cmSimd.h)(0x581CC64E)
-I (..\user\main\inc\system_stm32f4xx.h)(0x582097AC)
-I (..\fwlib\inc\stm32f4xx_crc.h)(0x581CC67C)
-I (..\fwlib\inc\stm32f4xx_dbgmcu.h)(0x581CC67C)
-I (..\fwlib\inc\stm32f4xx_dma.h)(0x581CC67C)
-I (..\fwlib\inc\stm32f4xx_exti.h)(0x581CC67C)
-I (..\fwlib\inc\stm32f4xx_flash.h)(0x581CC67C)
-I (..\fwlib\inc\stm32f4xx_gpio.h)(0x581CC67C)
-I (..\fwlib\inc\stm32f4xx_i2c.h)(0x581CC67C)
-I (..\fwlib\inc\stm32f4xx_iwdg.h)(0x581CC67C)
-I (..\fwlib\inc\stm32f4xx_pwr.h)(0x581CC67C)
-I (..\fwlib\inc\stm32f4xx_rcc.h)(0x58234D94)
-I (..\fwlib\inc\stm32f4xx_rtc.h)(0x581CC67C)
-I (..\fwlib\inc\stm32f4xx_sdio.h)(0x581CC67C)
-I (..\fwlib\inc\stm32f4xx_spi.h)(0x581CC67C)
-I (..\fwlib\inc\stm32f4xx_syscfg.h)(0x581CC67C)
-I (..\fwlib\inc\stm32f4xx_tim.h)(0x581CC67C)
-I (..\fwlib\inc\stm32f4xx_usart.h)(0x581CC67C)
-I (..\fwlib\inc\stm32f4xx_wwdg.h)(0x581CC67C)
-I (..\fwlib\inc\misc.h)(0x581CC67C)
-I (..\fwlib\inc\stm32f4xx_cryp.h)(0x581CC67C)
-I (..\fwlib\inc\stm32f4xx_hash.h)(0x581CC67C)
-I (..\fwlib\inc\stm32f4xx_rng.h)(0x581CC67C)
-I (..\fwlib\inc\stm32f4xx_can.h)(0x5821F052)
-I (..\fwlib\inc\stm32f4xx_dac.h)(0x581CC67C)
-I (..\fwlib\inc\stm32f4xx_dcmi.h)(0x581CC67C)
-I (..\fwlib\inc\stm32f4xx_dma2d.h)(0x581CC67C)
-I (..\fwlib\inc\stm32f4xx_fmc.h)(0x581CC67C)
-I (..\fwlib\inc\stm32f4xx_sai.h)(0x58220E4E)
-I (..\user\groundwork\inc\dbus.h)(0x61ADE9DA)
+I (..\user\groundwork\inc\data_stream.h)(0x61C9B79D)
+I (..\user\groundwork\inc\dbus.h)(0x61C9AF53)
 I (..\user\groundwork\inc\usart.h)(0x61ADF892)
+F (..\user\groundwork\src\mecanum.c)(0x61C9A98B)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\core -I ..\freertos\include -I ..\middlewares\delay -I ..\middlewares\sys -I ..\fwlib\inc -I ..\user\groundwork\inc -I ..\user\main\inc -I ..\user\modules\inc -I ..\freertos\portable\RVDS\ARM_CM4F -I ..\task\inc -I ..\user\groundwork\inc -I ..\user\algorithm\inc -I ..\user\modules\inc -I ..\user\protocol\inc -I ..\user\protocol\inc-I.\RTE\_Target_1-IG:\Keil\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IG:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F427xx -DSTM32F427_437xx -D__FPU_PRESENT -DUSE_STDPERIPH_DRIVER -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o .\objects\mecanum.o --omf_browse .\objects\mecanum.crf --depend .\objects\mecanum.d)
+I (G:\Keil\ARM\ARMCC\include\math.h)(0x5CEB79D6)
+I (..\user\groundwork\inc\data_stream.h)(0x61C9B79D)
+I (..\user\main\inc\stm32f4xx_conf.h)(0x58221744)
+I (..\fwlib\inc\stm32f4xx_adc.h)(0x581CC67C)
+I (..\user\main\inc\stm32f4xx.h)(0x5DBA840E)
+I (..\core\core_cm4.h)(0x5D99FA38)
+I (G:\Keil\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (..\core\core_cmInstr.h)(0x581CC64E)
+I (..\core\core_cmFunc.h)(0x581CC64E)
+I (..\core\core_cmSimd.h)(0x581CC64E)
+I (..\user\main\inc\system_stm32f4xx.h)(0x582097AC)
+I (..\fwlib\inc\stm32f4xx_crc.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_dbgmcu.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_dma.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_exti.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_flash.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_gpio.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_i2c.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_iwdg.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_pwr.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_rcc.h)(0x58234D94)
+I (..\fwlib\inc\stm32f4xx_rtc.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_sdio.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_spi.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_syscfg.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_tim.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_usart.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_wwdg.h)(0x581CC67C)
+I (..\fwlib\inc\misc.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_cryp.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_hash.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_rng.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_can.h)(0x5821F052)
+I (..\fwlib\inc\stm32f4xx_dac.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_dcmi.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_dma2d.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_fmc.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_sai.h)(0x58220E4E)
+I (..\user\groundwork\inc\dbus.h)(0x61C9AF53)
+I (..\user\groundwork\inc\can.h)(0x61C9A83C)
+I (..\user\groundwork\inc\usart.h)(0x61ADF892)
+I (..\user\groundwork\inc\mecanum.h)(0x61C9AD85)
 F (..\user\groundwork\src\bsp_protocol.c)(0x61B590E8)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\core -I ..\freertos\include -I ..\middlewares\delay -I ..\middlewares\sys -I ..\fwlib\inc -I ..\user\groundwork\inc -I ..\user\main\inc -I ..\user\modules\inc -I ..\freertos\portable\RVDS\ARM_CM4F -I ..\task\inc -I ..\user\groundwork\inc -I ..\user\algorithm\inc -I ..\user\modules\inc -I ..\user\protocol\inc -I ..\user\protocol\inc-I.\RTE\_Target_1-IG:\Keil\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IG:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F427xx -DSTM32F427_437xx -D__FPU_PRESENT -DUSE_STDPERIPH_DRIVER -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o .\objects\bsp_protocol.o --omf_browse .\objects\bsp_protocol.crf --depend .\objects\bsp_protocol.d)
 I (..\user\groundwork\inc\bsp_protocol.h)(0x61B590E8)
 I (..\user\main\inc\main.h)(0x5DD0F7B6)
@@ -2487,8 +2560,8 @@ I (..\fwlib\inc\stm32f4xx_dcmi.h)(0x581CC67C)
 I (..\fwlib\inc\stm32f4xx_dma2d.h)(0x581CC67C)
 I (..\fwlib\inc\stm32f4xx_fmc.h)(0x581CC67C)
 I (..\fwlib\inc\stm32f4xx_sai.h)(0x58220E4E)
-F (..\user\groundwork\src\gimbal.c)(0x61BDA2AB)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\core -I ..\freertos\include -I ..\middlewares\delay -I ..\middlewares\sys -I ..\fwlib\inc -I ..\user\groundwork\inc -I ..\user\main\inc -I ..\user\modules\inc -I ..\freertos\portable\RVDS\ARM_CM4F -I ..\task\inc -I ..\user\groundwork\inc -I ..\user\algorithm\inc -I ..\user\modules\inc -I ..\user\protocol\inc -I ..\user\protocol\inc-I.\RTE\_Target_1-IG:\Keil\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IG:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F427xx -DSTM32F427_437xx -D__FPU_PRESENT -DUSE_STDPERIPH_DRIVER -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o .\objects\gimbal.o --omf_browse .\objects\gimbal.crf --depend .\objects\gimbal.d)
-I (..\user\groundwork\inc\gimbal.h)(0x61B74063)
+F (..\user\groundwork\src\gimbal.c)(0x61C5825A)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\core -I ..\freertos\include -I ..\middlewares\delay -I ..\middlewares\sys -I ..\fwlib\inc -I ..\user\groundwork\inc -I ..\user\main\inc -I ..\user\modules\inc -I ..\freertos\portable\RVDS\ARM_CM4F -I ..\task\inc -I ..\user\groundwork\inc -I ..\user\algorithm\inc -I ..\user\modules\inc -I ..\user\protocol\inc -I ..\user\protocol\inc-I.\RTE\_Target_1-IG:\Keil\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IG:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F427xx -DSTM32F427_437xx -D__FPU_PRESENT -DUSE_STDPERIPH_DRIVER -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o .\objects\gimbal.o --omf_browse .\objects\gimbal.crf --depend .\objects\gimbal.d)
+I (..\user\groundwork\inc\gimbal.h)(0x61C06847)
 I (..\user\main\inc\stm32f4xx_conf.h)(0x58221744)
 I (..\fwlib\inc\stm32f4xx_adc.h)(0x581CC67C)
 I (..\user\main\inc\stm32f4xx.h)(0x5DBA840E)
@@ -2525,9 +2598,50 @@ I (..\fwlib\inc\stm32f4xx_dcmi.h)(0x581CC67C)
 I (..\fwlib\inc\stm32f4xx_dma2d.h)(0x581CC67C)
 I (..\fwlib\inc\stm32f4xx_fmc.h)(0x581CC67C)
 I (..\fwlib\inc\stm32f4xx_sai.h)(0x58220E4E)
+F (..\user\groundwork\src\data_stream.c)(0x61C9A84B)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\core -I ..\freertos\include -I ..\middlewares\delay -I ..\middlewares\sys -I ..\fwlib\inc -I ..\user\groundwork\inc -I ..\user\main\inc -I ..\user\modules\inc -I ..\freertos\portable\RVDS\ARM_CM4F -I ..\task\inc -I ..\user\groundwork\inc -I ..\user\algorithm\inc -I ..\user\modules\inc -I ..\user\protocol\inc -I ..\user\protocol\inc-I.\RTE\_Target_1-IG:\Keil\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IG:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F427xx -DSTM32F427_437xx -D__FPU_PRESENT -DUSE_STDPERIPH_DRIVER -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o .\objects\data_stream.o --omf_browse .\objects\data_stream.crf --depend .\objects\data_stream.d)
+I (..\user\groundwork\inc\data_stream.h)(0x61C9B79D)
+I (..\user\main\inc\stm32f4xx_conf.h)(0x58221744)
+I (..\fwlib\inc\stm32f4xx_adc.h)(0x581CC67C)
+I (..\user\main\inc\stm32f4xx.h)(0x5DBA840E)
+I (..\core\core_cm4.h)(0x5D99FA38)
+I (G:\Keil\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (..\core\core_cmInstr.h)(0x581CC64E)
+I (..\core\core_cmFunc.h)(0x581CC64E)
+I (..\core\core_cmSimd.h)(0x581CC64E)
+I (..\user\main\inc\system_stm32f4xx.h)(0x582097AC)
+I (..\fwlib\inc\stm32f4xx_crc.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_dbgmcu.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_dma.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_exti.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_flash.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_gpio.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_i2c.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_iwdg.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_pwr.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_rcc.h)(0x58234D94)
+I (..\fwlib\inc\stm32f4xx_rtc.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_sdio.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_spi.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_syscfg.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_tim.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_usart.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_wwdg.h)(0x581CC67C)
+I (..\fwlib\inc\misc.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_cryp.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_hash.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_rng.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_can.h)(0x5821F052)
+I (..\fwlib\inc\stm32f4xx_dac.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_dcmi.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_dma2d.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_fmc.h)(0x581CC67C)
+I (..\fwlib\inc\stm32f4xx_sai.h)(0x58220E4E)
+I (..\user\groundwork\inc\dbus.h)(0x61C9AF53)
+I (..\user\groundwork\inc\can.h)(0x61C9A83C)
+I (..\user\groundwork\inc\usart.h)(0x61ADF892)
 F (..\user\algorithm\src\pid.c)(0x61BD78F6)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\core -I ..\freertos\include -I ..\middlewares\delay -I ..\middlewares\sys -I ..\fwlib\inc -I ..\user\groundwork\inc -I ..\user\main\inc -I ..\user\modules\inc -I ..\freertos\portable\RVDS\ARM_CM4F -I ..\task\inc -I ..\user\groundwork\inc -I ..\user\algorithm\inc -I ..\user\modules\inc -I ..\user\protocol\inc -I ..\user\protocol\inc-I.\RTE\_Target_1-IG:\Keil\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IG:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F427xx -DSTM32F427_437xx -D__FPU_PRESENT -DUSE_STDPERIPH_DRIVER -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o .\objects\pid.o --omf_browse .\objects\pid.crf --depend .\objects\pid.d)
 I (..\user\algorithm\inc\pid.h)(0x61BD7905)
-I (..\user\groundwork\inc\can.h)(0x61BD9FD4)
+I (..\user\groundwork\inc\can.h)(0x61C9A83C)
 I (..\user\main\inc\stm32f4xx_conf.h)(0x58221744)
 I (..\fwlib\inc\stm32f4xx_adc.h)(0x581CC67C)
 I (..\user\main\inc\stm32f4xx.h)(0x5DBA840E)

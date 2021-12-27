@@ -712,6 +712,11 @@
               <FileType>1</FileType>
               <FilePath>..\task\src\gimbal_task.c</FilePath>
             </File>
+            <File>
+              <FileName>bmi_task.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\task\src\bmi_task.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -781,6 +786,11 @@
               <FileName>gimbal.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\user\groundwork\src\gimbal.c</FilePath>
+            </File>
+            <File>
+              <FileName>data_stream.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\user\groundwork\src\data_stream.c</FilePath>
             </File>
           </Files>
         </Group>

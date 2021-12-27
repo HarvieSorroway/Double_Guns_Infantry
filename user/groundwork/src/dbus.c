@@ -1,6 +1,7 @@
 #include "dbus.h"
 #include "stddef.h"
 #include "led.h"
+#include "data_stream.h"
 
 /* ----------------------- RC Channel Definition---------------------------- */
 #define RC_CH_VALUE_MIN ((uint16_t)364 )
@@ -152,6 +153,8 @@ void RemoteDataProcess(uint8_t *pData)
 	 RC_CtrlData.mouse.press_l = pData[12];
 	 RC_CtrlData.mouse.press_r = pData[13];
 	 RC_CtrlData.key.v = ((int16_t)pData[14]);// | ((int16_t)pData[15] << 8);
+	
+	 Data_RC = RC_CtrlData;
 	 //your control code бн.
 
 	 //USART_sendStrFromRemote(&RC_CtrlData);
@@ -203,3 +206,11 @@ void USART1_IRQHandler (void)
         }
 	}
 }	
+
+void CollectData_DBUS(void)
+{
+	Data_toVOFA[11].fload_data = RC_CtrlData.rc.ch0;
+	Data_toVOFA[12].fload_data = RC_CtrlData.rc.ch1;
+	Data_toVOFA[13].fload_data = RC_CtrlData.rc.ch2;
+	Data_toVOFA[14].fload_data = RC_CtrlData.rc.ch3;	
+}

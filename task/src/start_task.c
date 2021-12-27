@@ -1,6 +1,9 @@
 #include "start_task.h"
 #include "FreeRTOS.h"
 #include "task.h"
+
+#include "data_stream.h"
+
 #include "led.h"
 #include "usart.h"
 #include "can.h"
@@ -46,6 +49,12 @@ TaskHandle_t shoot_task_Handler;
 #define GIMBAL_TASK_PRIO 6
 #define GIMBAL_TASK_STK_SIZE 128
 TaskHandle_t gimbal_task_Handler;
+
+//bmi task
+#include "bmi_task.h"
+#define BMI_TASK_PRIO 8
+#define BMI_TASK_STK_SIZE 128
+TaskHandle_t bmi_task_Handler;
 
 send_float test_datas[2];
 void create_start_task(void)
@@ -103,6 +112,13 @@ void start_task(void *pvParameters)
 						(void*         )NULL,
 						(UBaseType_t   )USART_TASK_PRIO,
 						(TaskHandle_t* )&usart_task_Handler);
+						
+			xTaskCreate((TaskFunction_t)bmi_task,
+						(char*         )"bmi_task",
+						(uint16_t      )BMI_TASK_STK_SIZE,
+						(void*         )NULL,
+						(UBaseType_t   )BMI_TASK_PRIO,
+						(TaskHandle_t* )&bmi_task_Handler);
 
 	vTaskDelete(Start_Task_Handler);//删除开始任务
 	taskEXIT_CRITICAL();//退出临界区
@@ -127,9 +143,11 @@ void usart_task(void *pvParameters)
 	
 	for(;;)
 	{
-		test_datas[0].fload_data = moto_m2006_info[0].moto_total_angle;
-		test_datas[1].fload_data = FloatArray_SetAngle[0];
-		USART_sendFloat(test_datas,2);
+		for(int i = 0;i < DataSource;i++)
+		{
+			CollectData[i]();
+		}
+		USART_sendFloat(Data_toVOFA,15);
 		vTaskDelay(2);
 	}
 }

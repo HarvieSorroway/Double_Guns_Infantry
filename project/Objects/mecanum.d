@@ -1,6 +1,6 @@
 .\objects\mecanum.o: ..\user\groundwork\src\mecanum.c
 .\objects\mecanum.o: G:\Keil\ARM\ARMCC\Bin\..\include\math.h
-.\objects\mecanum.o: ..\user\groundwork\inc\mecanum.h
+.\objects\mecanum.o: ..\user\groundwork\inc\data_stream.h
 .\objects\mecanum.o: ..\user\main\inc\stm32f4xx_conf.h
 .\objects\mecanum.o: ..\fwlib\inc\stm32f4xx_adc.h
 .\objects\mecanum.o: ..\user\main\inc\stm32f4xx.h
@@ -39,4 +39,6 @@
 .\objects\mecanum.o: ..\fwlib\inc\stm32f4xx_fmc.h
 .\objects\mecanum.o: ..\fwlib\inc\stm32f4xx_sai.h
 .\objects\mecanum.o: ..\user\groundwork\inc\dbus.h
+.\objects\mecanum.o: ..\user\groundwork\inc\can.h
 .\objects\mecanum.o: ..\user\groundwork\inc\usart.h
+.\objects\mecanum.o: ..\user\groundwork\inc\mecanum.h

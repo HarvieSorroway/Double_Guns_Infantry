@@ -10,5 +10,6 @@ extern float FloatArray_SetAngle[2];
 
 void SetAngles(float Float_Angle_01,float Float_Angle_02);
 void SetAngles_delta(float Float_Angle_01_delta,float Float_Angle_02_delta);
+void LimAngle(float up,float down);
 
 #endif

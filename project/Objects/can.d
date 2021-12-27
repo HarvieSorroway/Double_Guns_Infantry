@@ -37,3 +37,6 @@
 .\objects\can.o: ..\fwlib\inc\stm32f4xx_dma2d.h
 .\objects\can.o: ..\fwlib\inc\stm32f4xx_fmc.h
 .\objects\can.o: ..\fwlib\inc\stm32f4xx_sai.h
+.\objects\can.o: ..\user\groundwork\inc\data_stream.h
+.\objects\can.o: ..\user\groundwork\inc\dbus.h
+.\objects\can.o: ..\user\groundwork\inc\usart.h

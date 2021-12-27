@@ -25,7 +25,7 @@ typedef enum{
 	CAN1_RX_MOTO3508_3 = 0x203,
 	CAN1_RX_MOTO3508_4 = 0x204,
 	
-	CAN1_RX_MOTO2006_5_1 = 0x205,
+	CAN1_RX_MOTO2006_5_1 = 0x209,
 	CAN1_RX_MOTO2006_5_2 = 0x206,
 	//CAN1_RX_MOTO2006_5 = 0x207,
 }CAN_Message_ID;
@@ -39,5 +39,6 @@ void set_3508_current(int16_t i1,int16_t i2,int16_t i3,int16_t i4);
 void moto_infomation_process(moto_info *moto_infomation,CanRxMsg *RxMessage);
 void set_2006_current(int16_t i1,int16_t i2);
 void set_moto_current(int16_t i1,int16_t i2,int16_t i3,int16_t i4);
-
+void CollectData_CAN(void);
+	
 #endif

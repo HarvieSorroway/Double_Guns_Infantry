@@ -42,3 +42,6 @@
 .\objects\dbus.o: G:\Keil\ARM\ARMCC\Bin\..\include\math.h
 .\objects\dbus.o: ..\middlewares\delay\delay.h
 .\objects\dbus.o: ..\middlewares\sys\sys.h
+.\objects\dbus.o: ..\user\groundwork\inc\data_stream.h
+.\objects\dbus.o: ..\user\groundwork\inc\can.h
+.\objects\dbus.o: ..\user\groundwork\inc\usart.h
