@@ -6,9 +6,9 @@
 #include "FreeRTOS.h"
 #include "task.h"
 
-extern float delta;
-
 void protocol_rx_irq_usart6(uint8_t res);
 void bmi_task(void *pvParameters);
+
+void CollectData_BMI(void);
 
 #endif

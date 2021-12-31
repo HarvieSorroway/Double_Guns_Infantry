@@ -18,7 +18,7 @@ send_float atest_datas[2];
 
 int main(void)
 {
-	init_all();
+ 	init_all();
 	
 	create_start_task();
 	vTaskStartScheduler();

@@ -49,3 +49,14 @@
 .\objects\init.o: ..\user\groundwork\inc\pwm.h
 .\objects\init.o: ..\user\groundwork\inc\mecanum.h
 .\objects\init.o: ..\task\inc\pid_caculate_task.h
+.\objects\init.o: ..\task\inc\bmi_task.h
+.\objects\init.o: ..\freertos\include\FreeRTOS.h
+.\objects\init.o: G:\Keil\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\init.o: ..\freertos\include\FreeRTOSConfig.h
+.\objects\init.o: ..\freertos\include\projdefs.h
+.\objects\init.o: ..\freertos\include\portable.h
+.\objects\init.o: ..\freertos\include\deprecated_definitions.h
+.\objects\init.o: ..\freertos\portable\RVDS\ARM_CM4F\portmacro.h
+.\objects\init.o: ..\freertos\include\mpu_wrappers.h
+.\objects\init.o: ..\freertos\include\task.h
+.\objects\init.o: ..\freertos\include\list.h

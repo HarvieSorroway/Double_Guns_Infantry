@@ -6,7 +6,7 @@
 #include "can.h"
 #include "usart.h"
 
-#define DataSource 3
+#define DataSource 4
 
 typedef struct data_bmi_struct{
 	float Angle_X;

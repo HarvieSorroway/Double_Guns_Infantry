@@ -30,9 +30,9 @@ typedef struct
 
 extern pid_typedef chassis_current_pid[4];
 extern pid_typedef chassis_speed_pid[4];
-extern pid_typedef m2006_current_pid[2];
-extern pid_typedef m2006_speed_pid[2];
-extern pid_typedef m2006_position_pid[2];
+extern pid_typedef m2006_current_pid_FollowChassis[2];
+extern pid_typedef m2006_speed_pid_FollowChassis[2];
+extern pid_typedef m2006_position_pid_FollowChassis[2];
 
 void pid_abs_limit(float *a,float abs_max);
 void pid_init(pid_typedef*pid,float kp,float ki,float kd,float pid_out_limit,float pid_integral_limit);
