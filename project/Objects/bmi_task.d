@@ -1,5 +1,5 @@
 .\objects\bmi_task.o: ..\task\src\bmi_task.c
-.\objects\bmi_task.o: ..\task\inc\bmi_task.h
+.\objects\bmi_task.o: ..\task\inc\pid_caculate_task.h
 .\objects\bmi_task.o: ..\user\main\inc\stm32f4xx_conf.h
 .\objects\bmi_task.o: ..\fwlib\inc\stm32f4xx_adc.h
 .\objects\bmi_task.o: ..\user\main\inc\stm32f4xx.h
@@ -37,6 +37,9 @@
 .\objects\bmi_task.o: ..\fwlib\inc\stm32f4xx_dma2d.h
 .\objects\bmi_task.o: ..\fwlib\inc\stm32f4xx_fmc.h
 .\objects\bmi_task.o: ..\fwlib\inc\stm32f4xx_sai.h
+.\objects\bmi_task.o: ..\user\groundwork\inc\bsp_protocol.h
+.\objects\bmi_task.o: ..\user\main\inc\main.h
+.\objects\bmi_task.o: ..\task\inc\gimbal_task.h
 .\objects\bmi_task.o: ..\freertos\include\FreeRTOS.h
 .\objects\bmi_task.o: G:\Keil\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\bmi_task.o: ..\freertos\include\FreeRTOSConfig.h
@@ -47,10 +50,6 @@
 .\objects\bmi_task.o: ..\freertos\include\mpu_wrappers.h
 .\objects\bmi_task.o: ..\freertos\include\task.h
 .\objects\bmi_task.o: ..\freertos\include\list.h
-.\objects\bmi_task.o: ..\task\inc\pid_caculate_task.h
-.\objects\bmi_task.o: ..\user\groundwork\inc\bsp_protocol.h
-.\objects\bmi_task.o: ..\user\main\inc\main.h
-.\objects\bmi_task.o: ..\task\inc\gimbal_task.h
 .\objects\bmi_task.o: ..\user\groundwork\inc\gimbal.h
 .\objects\bmi_task.o: ..\user\algorithm\inc\pid.h
 .\objects\bmi_task.o: ..\user\groundwork\inc\can.h

@@ -1,11 +1,9 @@
-#include "bmi_task.h"
 #include "pid_caculate_task.h"
 
 #include "bsp_protocol.h"
 #include "gimbal_task.h"
 #include "gimbal.h"
 #include "pid.h"
-
 #include "data_stream.h"
 
 volatile uint8_t Res;
@@ -17,6 +15,8 @@ uint16_t rx_it_3;
 float imu_rx_data[20];
 
 uint16_t flag_imu=0x0201;
+
+volatile float delta;
 
 float coefficients[3] = {2,0.1,0};
 float s[10] = {0,};
@@ -77,10 +77,4 @@ void USART6_IRQHandler()
 	
 	USART_ClearITPendingBit(USART6, USART_IT_RXNE);
     USART_ClearFlag(USART6, USART_IT_RXNE);
-}
-
-void CollectData_BMI(void)
-{
-	Data_toVOFA[15].fload_data = Data_bmi.Angle_Z_total;
-	Data_toVOFA[16].fload_data = Data_bmi.Angle_Z_raw;
 }

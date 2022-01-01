@@ -16,7 +16,6 @@
 
 //task≥ı ºªØ
 #include "pid_caculate_task.h"
-#include "bmi_task.h"
 
 void init_all()
 {
@@ -42,5 +41,4 @@ void init_all()
 	CollectData[0] = CollectData_CAN;
 	CollectData[1] = CollectData_DBUS;
 	CollectData[2] = CollectData_Mecanum;
-	CollectData[3] = CollectData_BMI;
 }
