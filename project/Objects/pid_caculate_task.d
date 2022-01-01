@@ -59,3 +59,4 @@
 .\objects\pid_caculate_task.o: ..\middlewares\sys\sys.h
 .\objects\pid_caculate_task.o: ..\user\groundwork\inc\gimbal.h
 .\objects\pid_caculate_task.o: ..\task\inc\gimbal_task.h
+.\objects\pid_caculate_task.o: ..\user\algorithm\inc\filters.h

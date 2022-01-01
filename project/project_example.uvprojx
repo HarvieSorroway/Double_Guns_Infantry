@@ -805,6 +805,11 @@
               <FileType>1</FileType>
               <FilePath>..\user\algorithm\src\pid.c</FilePath>
             </File>
+            <File>
+              <FileName>filters.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\user\algorithm\src\filters.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

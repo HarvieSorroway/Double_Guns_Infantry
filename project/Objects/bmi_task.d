@@ -54,6 +54,8 @@
 .\objects\bmi_task.o: ..\user\groundwork\inc\gimbal.h
 .\objects\bmi_task.o: ..\user\algorithm\inc\pid.h
 .\objects\bmi_task.o: ..\user\groundwork\inc\can.h
+.\objects\bmi_task.o: ..\user\algorithm\inc\filters.h
+.\objects\bmi_task.o: G:\Keil\ARM\ARMCC\Bin\..\include\math.h
 .\objects\bmi_task.o: ..\user\groundwork\inc\data_stream.h
 .\objects\bmi_task.o: ..\user\groundwork\inc\dbus.h
 .\objects\bmi_task.o: ..\user\groundwork\inc\usart.h

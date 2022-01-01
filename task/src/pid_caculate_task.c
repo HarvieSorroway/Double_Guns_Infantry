@@ -16,13 +16,18 @@
 //#include "usart.h"
 #include "gimbal_task.h"
 
+#include "filters.h"
 
 float FloatArray_SpeedInit[3] = {10,0.3,0};
 float FloatArray_CurrentInit[3] = {1.2,0.08,0};
 
+first_order_filter_type_t filter2;
+
 
 void pid_caculate_init(void)
 {
+	firstOrderFilter_init(&filter2,1,1);
+	
 	for(int i = 0;i < 4;i++)
 	{	
 		pid_init(&chassis_speed_pid[i],FloatArray_SpeedInit[0],FloatArray_SpeedInit[1],FloatArray_SpeedInit[2],15000,12000);
@@ -64,7 +69,8 @@ void pid_caculate_task(void *pvParameters)
 		{
 			for(int i=0;i<2;i++)
 			{
-				pid_caculate_delta(&m2006_position_pid_FollowChassis[i],FloatArray_SetAngle[i],Data_bmi.Angle_Z_total/*moto_m2006_info[i].moto_total_angle*/);
+				firstOrderFilter_caculate(&filter2,Data_bmi.Angle_Z_total);
+				pid_caculate_delta(&m2006_position_pid_FollowChassis[i],FloatArray_SetAngle[i],filter2.out/*moto_m2006_info[i].moto_total_angle*/);
 				pid_caculate_delta(&m2006_speed_pid_FollowChassis[i],m2006_position_pid_FollowChassis[i].OUT,Data_bmi.Velocity_Z);
 				//pid_caculate_position(&m2006_current_pid_FollowChassis[i],m2006_speed_pid_FollowChassis[i].OUT,Data_m6020[i].moto_current);
 			}

@@ -75,6 +75,7 @@
 ".\objects\gimbal.o"
 ".\objects\data_stream.o"
 ".\objects\pid.o"
+".\objects\filters.o"
 --library_type=microlib --strict --scatter ".\Objects\project_example.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

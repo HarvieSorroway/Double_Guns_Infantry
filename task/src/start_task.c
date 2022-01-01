@@ -147,7 +147,7 @@ void usart_task(void *pvParameters)
 		{
 			CollectData[i]();
 		}
-		USART_sendFloat(Data_toVOFA,17);
+		USART_sendFloat(Data_toVOFA,18);
 		vTaskDelay(2);
 	}
 }

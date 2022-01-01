@@ -4,7 +4,9 @@
 #include "bsp_protocol.h"
 #include "gimbal_task.h"
 #include "gimbal.h"
+
 #include "pid.h"
+#include "filters.h"
 
 #include "data_stream.h"
 
@@ -22,6 +24,8 @@ float coefficients[3] = {2,0.1,0};
 float s[10] = {0,};
 
 pid_typedef pid;
+meanFilter_typedef filter;
+
 
 void bmi_task(void *pvParameters)
 {
@@ -30,7 +34,9 @@ void bmi_task(void *pvParameters)
 	
 	
 	get_protocol_info(usart6_rx_buf,&usart6_rx_pos,&rx_it_3,imu_rx_data);
-
+	meanFilter_init(&filter,20);
+	
+	
 	for(;;)
 	{
 		get_protocol_info(usart6_rx_buf,&usart6_rx_pos,&rx_it_3,imu_rx_data);
@@ -82,5 +88,5 @@ void USART6_IRQHandler()
 void CollectData_BMI(void)
 {
 	Data_toVOFA[15].fload_data = Data_bmi.Angle_Z_total;
-	Data_toVOFA[16].fload_data = Data_bmi.Angle_Z_raw;
+	Data_toVOFA[16].fload_data = Data_bmi.Angle_Z_raw;          
 }
