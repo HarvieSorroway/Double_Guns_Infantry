@@ -106,7 +106,7 @@ void set_3508_current(int16_t i1,int16_t i2,int16_t i3,int16_t i4)
 void set_2006_current(int16_t i1,int16_t i2)
 {
 	CanTxMsg TxMessage;
-	TxMessage.StdId= 0x1FF;
+	TxMessage.StdId= 0x2FF;
 	TxMessage.IDE = 0;
 	TxMessage.RTR = 0;
 	TxMessage.DLC = 8;
@@ -170,10 +170,10 @@ void CAN1_RX0_IRQHandler(void)
 				moto_infomation_process(&Data_m3508[i],&RxMessage);
 				//moto_infomation_process(&moto_chassis_info[i],&RxMessage);
 			}break;
-			case CAN1_RX_MOTO6020_1:
-			case CAN1_RX_MOTO6020_2:
+			case CAN1_RX_MOTO2006_5_1:
+			case CAN1_RX_MOTO2006_5_2:
 			{
-				i=RxMessage.StdId-CAN1_RX_MOTO6020_1;
+				i=RxMessage.StdId-CAN1_RX_MOTO2006_5_1;
 				moto_infomation_process(&Data_m6020[i],&RxMessage);
 				//moto_infomation_process(&moto_m2006_info[i],&RxMessage);
 			}break;

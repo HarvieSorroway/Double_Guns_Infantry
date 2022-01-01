@@ -10,7 +10,7 @@
 .\objects\shoot_task.o: ..\freertos\include\mpu_wrappers.h
 .\objects\shoot_task.o: ..\freertos\include\task.h
 .\objects\shoot_task.o: ..\freertos\include\list.h
-.\objects\shoot_task.o: ..\user\groundwork\inc\data_stream.h
+.\objects\shoot_task.o: ..\user\groundwork\inc\dbus.h
 .\objects\shoot_task.o: ..\user\main\inc\stm32f4xx_conf.h
 .\objects\shoot_task.o: ..\fwlib\inc\stm32f4xx_adc.h
 .\objects\shoot_task.o: ..\user\main\inc\stm32f4xx.h
@@ -47,7 +47,4 @@
 .\objects\shoot_task.o: ..\fwlib\inc\stm32f4xx_dma2d.h
 .\objects\shoot_task.o: ..\fwlib\inc\stm32f4xx_fmc.h
 .\objects\shoot_task.o: ..\fwlib\inc\stm32f4xx_sai.h
-.\objects\shoot_task.o: ..\user\groundwork\inc\dbus.h
-.\objects\shoot_task.o: ..\user\groundwork\inc\can.h
-.\objects\shoot_task.o: ..\user\groundwork\inc\usart.h
 .\objects\shoot_task.o: ..\task\inc\shoot_task.h
