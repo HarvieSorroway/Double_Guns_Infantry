@@ -34,5 +34,6 @@ extern RC_Ctl_t RC_CtrlData;
 
 void RC_Init(void);
 void RemoteDataProcess(uint8_t *pData);
+void CollectData_DBUS(void);
 
 #endif

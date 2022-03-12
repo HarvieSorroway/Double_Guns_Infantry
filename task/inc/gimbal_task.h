@@ -6,6 +6,10 @@
 #include "FreeRTOS.h"
 #include "task.h"
 
+extern float Float_bmiDirection;
+extern float Float_bmiZSpeed;
+extern float Float_bmiDirection_lastFrame;
+
 void gimbal_task(void *pvParameters);
 
 

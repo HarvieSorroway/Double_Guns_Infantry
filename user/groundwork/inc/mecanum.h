@@ -9,6 +9,6 @@ extern float aimSpeed[4];
 extern float Float_NowAngle;
 
 void get_aimSpeed(void);
-
+void CollectData_Mecanum(void);
 
 #endif

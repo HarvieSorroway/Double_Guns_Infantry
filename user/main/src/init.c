@@ -2,6 +2,8 @@
 
 #include "init.h"
 
+#include "data_stream.h"
+
 //groundwork初始化
 #include "delay.h"
 #include "led.h"
@@ -10,6 +12,7 @@
 #include "pid.h"
 #include "can.h"
 #include "pwm.h"
+#include "mecanum.h"
 
 //task初始化
 #include "pid_caculate_task.h"
@@ -34,4 +37,8 @@ void init_all()
 	UART8_init();
 	USART6_init();
 	pid_caculate_init();
+	
+	CollectData[0] = CollectData_CAN;
+	CollectData[1] = CollectData_DBUS;
+	CollectData[2] = CollectData_Mecanum;
 }

@@ -1,5 +1,5 @@
 #include "can.h"
-
+#include "data_stream.h"
 
 moto_info moto_chassis_info[4];
 moto_info moto_m2006_info[2];
@@ -106,7 +106,7 @@ void set_3508_current(int16_t i1,int16_t i2,int16_t i3,int16_t i4)
 void set_2006_current(int16_t i1,int16_t i2)
 {
 	CanTxMsg TxMessage;
-	TxMessage.StdId= CAN1_TX_MOTO3508_5_8;
+	TxMessage.StdId= 0x2FF;
 	TxMessage.IDE = 0;
 	TxMessage.RTR = 0;
 	TxMessage.DLC = 8;
@@ -167,14 +167,28 @@ void CAN1_RX0_IRQHandler(void)
 			case CAN1_RX_MOTO3508_4:
 			{
 				i=RxMessage.StdId-CAN1_RX_MOTO3508_1;
-				moto_infomation_process(&moto_chassis_info[i],&RxMessage);
+				moto_infomation_process(&Data_m3508[i],&RxMessage);
+				//moto_infomation_process(&moto_chassis_info[i],&RxMessage);
 			}break;
 			case CAN1_RX_MOTO2006_5_1:
 			case CAN1_RX_MOTO2006_5_2:
 			{
 				i=RxMessage.StdId-CAN1_RX_MOTO2006_5_1;
-				moto_infomation_process(&moto_m2006_info[i],&RxMessage);
+				moto_infomation_process(&Data_m6020[i],&RxMessage);
+				//moto_infomation_process(&moto_m2006_info[i],&RxMessage);
 			}break;
 		}	
 	}
+}
+
+void CollectData_CAN(void)
+{
+	Data_toVOFA[0].fload_data = Data_m3508[0].moto_speed;
+	Data_toVOFA[1].fload_data = Data_m3508[1].moto_speed;
+	Data_toVOFA[2].fload_data = Data_m3508[2].moto_speed;
+	Data_toVOFA[3].fload_data = Data_m3508[3].moto_speed;
+	
+	Data_toVOFA[4].fload_data = Data_m6020[0].moto_angle;
+	Data_toVOFA[5].fload_data = Data_m6020[1].moto_total_angle;
+	Data_toVOFA[6].fload_data = Data_m6020[2].moto_angle;
 }
